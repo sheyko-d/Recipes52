@@ -1,11 +1,5 @@
 package com.stockholmapplab.recipes.adapter;
 
-import java.util.List;
-import java.util.Map;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Typeface;
@@ -18,6 +12,11 @@ import android.widget.TextView;
 
 import com.stockholmapplab.recipes.EditIngredientActivity;
 import com.stockholmapplab.recipes.R;
+
+import org.json.JSONObject;
+
+import java.util.List;
+import java.util.Map;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
@@ -39,8 +38,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
 			return context.getResources().getString(
 					childJSON.getInt("title_id"));
-		} catch (JSONException e) {
-			return "n/a";
+		} catch (Exception e) {
+			return "";
 		}
 	}
 

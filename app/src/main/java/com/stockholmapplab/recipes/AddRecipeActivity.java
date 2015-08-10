@@ -1,21 +1,5 @@
 package com.stockholmapplab.recipes;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
@@ -48,13 +32,31 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.stockholmapplab.recipes.typeface.CustomButton;
 import com.stockholmapplab.recipes.typeface.CustomTextView;
 import com.stockholmapplab.recipes.typeface.TypefaceSpan;
 import com.stockholmapplab.recipes.util.DBHelper;
 import com.stockholmapplab.recipes.util.PrefHelper;
 import com.stockholmapplab.recipes.views.ControllableViewPager;
-import com.stockholmapplab.recipes.R;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressLint("InlinedApi")
 public class AddRecipeActivity extends ActionBarActivity {
@@ -585,7 +587,6 @@ public class AddRecipeActivity extends ActionBarActivity {
 	}
 
 	private void removeSavedRecipe() {
-		// TODO: ADD OTHER ITEMS
 		PrefHelper.deletePreference("AddTitle");
 		PrefHelper.deletePreference("AddSignature");
 		PrefHelper.deletePreference("AddPhotos");
@@ -758,7 +759,6 @@ public class AddRecipeActivity extends ActionBarActivity {
 	}
 
 	public void close() {
-		// TODO: Add other items
 		SQLiteDatabase DB = new DBHelper(BaseApplication.getAppContext())
 				.getReadableDatabase();
 		Cursor cursor = DB.query("add_ingredients", null, null, null, null,
