@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:id="@+id/rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#32ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.stockholmapplab.recipes.util.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="@dimen/help_calendar_width"
+            android:layout_height="@dimen/help_calendar_height"
+            android:layout_gravity="center_horizontal" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txtTap"
+            style="@style/style25"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_white_patch"
+            android:clickable="false"
+            android:drawableLeft="@drawable/ic_bulb"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+    </LinearLayout>
+
+</RelativeLayout>

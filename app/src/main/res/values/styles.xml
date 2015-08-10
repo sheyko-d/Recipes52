@@ -1,0 +1,289 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- For action bar sherlock activities use parent = @style/Theme.Sherlock -->
+    <style name="Theme.RoboDemo" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="style1">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+
+    <style name="style2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="style3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="style_my_state_1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="style_my_state_2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#4C4C4C</item>
+    </style>
+
+    <style name="style4">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#4C4C4C</item>
+    </style>
+
+    <style name="style5">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style5.2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style5.3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style6">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style7">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FF8000</item>
+    </style>
+
+    <style name="style8">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#4C4C4C</item>
+    </style>
+
+    <style name="style9">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="style10">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#4C4C4C</item>
+    </style>
+
+    <style name="style11">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style12">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#00A3D1</item>
+    </style>
+
+    <style name="style13">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#4C4C4C</item>
+    </style>
+
+    <style name="style14">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="style15">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="style16">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="style17">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="style18">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#79BE20</item>
+    </style>
+
+    <style name="style19">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="style20">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="style21">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#88D02E</item>
+    </style>
+
+    <style name="style22">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="style23">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="style24">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="style25">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style26">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="ActivityTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="ActivityThemeWithActionBar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:buttonStyle">@style/button</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/ic_top_bar</item>
+    </style>
+
+    <style name="ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/pull_from_right_to_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/hold_acitvity</item>
+        <item name="android:activityCloseEnterAnimation">@anim/hold_acitvity</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_in_left_to_right</item>
+    </style>
+
+    <style name="ActivityTheme_1" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ptr_headerContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="ptr_header">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ptr_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ptr_pulltorefresh_arrow</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_spinner" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_textwrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ptr_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ptr_last_updated" parent="ptr_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_below">@+id/ptr_id_text</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- dialogue Heights -->
+
+    <dimen name="about_height">45dp</dimen>
+    <dimen name="quick_start_height">25dp</dimen>
+    <dimen name="body_stats_height">45dp</dimen>
+    <dimen name="my_stats_height_1">45dp</dimen>
+    <dimen name="my_stats_height_2">25dp</dimen>
+    <dimen name="consumed_today_height">40dp</dimen>
+    <dimen name="diet_cycle_height">40dp</dimen>
+    <dimen name="width">10dp</dimen>
+
+</resources>

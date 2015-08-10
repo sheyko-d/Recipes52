@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/todaytest" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txt_message"
+        style="@style/style3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+    <RelativeLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txt_message"
+        android:layout_marginLeft="@dimen/consumed_padding_top"
+        android:layout_marginRight="@dimen/consumed_padding_top" >
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_hint"
+            style="@style/style4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btn_ok"
+            style="@style/style5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="@dimen/consumed_padding_top"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/ic_start_patch"
+            android:text="@string/str_dialog_2"
+            android:textColor="@drawable/ac_about_text_selector"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_btn_ok"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

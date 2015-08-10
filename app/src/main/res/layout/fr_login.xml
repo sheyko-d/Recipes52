@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/customTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_facebook_margin_top"
+        android:gravity="right"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/str_facebook_title"
+        android:textColor="@color/bold_grey_color"
+        android:textSize="@dimen/login_title_text_size"
+        slk:typeface="font/ClementePDac-ExtraLight.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_margin_vertical"
+        android:layout_marginTop="@dimen/login_margin_vertical"
+        android:background="@drawable/btn_facebook"
+        android:clickable="true"
+        android:lineSpacingMultiplier="1.2"
+        android:onClick="facebook"
+        android:text="@string/str_facebook"
+        android:textColor="@drawable/ac_login_text_color_selector"
+        android:textSize="@dimen/login_verion_item_text_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/CustomTextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/str_credentials_title"
+        android:textColor="@color/bold_grey_color"
+        android:textSize="@dimen/login_title_text_size"
+        slk:typeface="font/ClementePDac-ExtraLight.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_margin_vertical"
+        android:layout_marginTop="@dimen/login_margin_vertical"
+        android:background="@drawable/btn_credentials"
+        android:clickable="true"
+        android:lineSpacingMultiplier="1.2"
+        android:onClick="credentials"
+        android:text="@string/str_credentials"
+        android:textColor="@drawable/ac_login_text_color_selector"
+        android:textSize="@dimen/login_verion_item_text_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/CustomTextView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/str_registration_title"
+        android:textColor="@color/bold_grey_color"
+        android:textSize="@dimen/login_title_text_size"
+        slk:typeface="font/ClementePDac-ExtraLight.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_margin_vertical"
+        android:layout_marginTop="@dimen/login_margin_vertical"
+        android:background="@drawable/btn_registration"
+        android:clickable="true"
+        android:lineSpacingMultiplier="1.2"
+        android:onClick="registration"
+        android:text="@string/str_registration"
+        android:textColor="@drawable/ac_login_text_color_selector"
+        android:textSize="@dimen/login_verion_item_text_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+</LinearLayout>

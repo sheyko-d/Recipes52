@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:layout_marginTop="@dimen/recipes_vertical_margin_small"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="6dp" >
+
+            <com.stockholmapplab.recipes.typeface.CustomCheckBox
+                android:id="@+id/showCategoryCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="16dp"
+                android:ellipsize="marquee"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:paddingLeft="48dp"
+                android:singleLine="false"
+                android:text="@string/str_categories"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/recipes_categories_txt_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/str_language"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipes_item_text_size_small_title"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomButton
+                    android:id="@+id/langBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:onClick="lang"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/str_all"
+                    android:textSize="@dimen/recipes_btn_text_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/recipes_horizontal_margin_small"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/str_sort"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipes_item_text_size_small_title"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomButton
+                    android:id="@+id/sortBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:onClick="sort"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/str_sort_latest"
+                    android:textSize="@dimen/recipes_btn_text_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabsAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:layout_marginTop="@dimen/recipes_vertical_margin_small"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recipes_tabs_height"
+                android:layout_toLeftOf="@+id/tabAllSelected"
+                android:background="@drawable/tab_unselected"
+                android:clickable="true"
+                android:onClick="showFavorites" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_favorites"
+                    android:drawablePadding="4dp"
+                    android:text="@string/str_favorites"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipes_tabs_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+            </FrameLayout>
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tabAllSelected"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/recipes_tabs_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-8dp"
+                android:background="@drawable/tab_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="showAll"
+                android:text="@string/str_all"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/recipes_tabs_txt_size"
+                slk:typeface="font/ClementePDae-Light.otf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabsFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:layout_marginTop="@dimen/recipes_vertical_margin_small"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tabAllUnselected"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/recipes_tabs_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tab_unselected"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="showAll"
+                android:text="@string/str_all"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/recipes_tabs_txt_size"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recipes_tabs_height"
+                android:layout_marginRight="-8dp"
+                android:layout_toLeftOf="@+id/tabAllUnselected"
+                android:background="@drawable/tab_selected"
+                android:clickable="true"
+                android:onClick="showFavorites" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_favorites"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/str_favorites"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/recipes_tabs_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/recipesFragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomLayout"
+            android:layout_below="@+id/tabsAll"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:layout_marginTop="2dp" >
+
+            <LinearLayout
+                android:id="@+id/noRecipesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:drawableLeft="@drawable/ic_bulb"
+                    android:drawablePadding="16dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="@dimen/recipes_norecipes_padding"
+                    android:paddingRight="@dimen/recipes_norecipes_padding"
+                    android:text="@string/str_no_recipes"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/recipes_norecipes_txtsize"
+                    slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomButton
+                    android:id="@+id/recipesRefreshBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_selector"
+                    android:onClick="refresh"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:text="@string/str_refresh"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/recipes_btn_text_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomLayout"
+            android:layout_below="@+id/tabsAll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/border_horizontal_margin"
+            android:layout_marginRight="@dimen/border_horizontal_margin"
+            android:background="@drawable/list_border" >
+
+            <ProgressBar
+                android:id="@+id/recipesProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/recipes_vertical_margin"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:layout_marginTop="@dimen/recipes_vertical_margin"
+            android:orientation="horizontal" >
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/filterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/recipes_horizontal_margin_small"
+                android:background="@drawable/button_selector"
+                android:onClick="filter"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/str_filter"
+                android:textSize="@dimen/recipes_btn_text_size"
+                android:visibility="gone"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/recipes_horizontal_margin_small"
+                android:layout_marginRight="@dimen/recipes_horizontal_margin_small"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:onClick="advSearch"
+                android:text="@string/str_adv_search"
+                android:textSize="@dimen/recipes_btn_text_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/clearAdvSearchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:onClick="clearAdvancedSearch"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/str_clear"
+                android:textSize="@dimen/recipes_btn_text_size"
+                android:visibility="gone"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

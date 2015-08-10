@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:recipes="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add"
+        android:title="@string/action_add"
+        android:visible="false"
+        recipes:showAsAction="always"/>
+    <item
+        android:id="@+id/action_lang"
+        android:icon="@drawable/ic_flag_en"
+        android:title="@string/action_lang"
+        recipes:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_lang_en"
+                android:checkable="true"
+                android:checked="true"
+                android:title="@string/str_lang_en"/>
+            <item
+                android:id="@+id/action_lang_sv"
+                android:checkable="true"
+                android:title="@string/str_lang_sv"/>
+        </menu>
+    </item>
+
+</menu>

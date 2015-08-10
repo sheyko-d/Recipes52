@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:recipes="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_new"
+        android:title="@string/action_new"
+        recipes:showAsAction="always"/>
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/ic_clear"
+        android:title="@string/action_clear"
+        recipes:showAsAction="always"/>
+
+</menu>

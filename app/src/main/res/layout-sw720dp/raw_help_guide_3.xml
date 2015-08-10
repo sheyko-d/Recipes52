@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtConsumption"
+        style="@style/style4.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/str_consumption"
+        slk:typeface="font/ClementePDao-Heavy.otf" />
+
+    <LinearLayout
+        android:id="@+id/ll_help_guide_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txtConsumption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:padding="5dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btnCalorie"
+            style="@style/style11"
+            android:layout_width="@dimen/help_calorie_width"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_time_patch"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+    </LinearLayout>
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtCalorie"
+        style="@style/style9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txtConsumption"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="66dp"
+        android:layout_toRightOf="@+id/ll_help_guide_3"
+        android:text="@string/str_cal"
+        slk:typeface="font/ClementePDao-Heavy.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtRecommendedCalorie"
+        style="@style/style26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_help_guide_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:drawableLeft="@drawable/ic_bulb"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="@string/str_recommended_calorie"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+</RelativeLayout>

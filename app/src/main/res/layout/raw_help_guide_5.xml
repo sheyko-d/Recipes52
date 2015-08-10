@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtgreat"
+        style="@style/style10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/str_great"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtReady"
+        style="@style/style4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txtgreat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/str_ready"
+        slk:typeface="font/ClementePDac-ExtraLight.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtluck"
+        style="@style/style4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txtReady"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/str_good_luck"
+        slk:typeface="font/ClementePDac-ExtraLight.otf" />
+
+    <LinearLayout
+        android:id="@+id/ll_help_guide_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txtluck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btnStart"
+            style="@style/style6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/ic_start_patch"
+            android:text="@string/str_start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@drawable/ac_about_text_selector"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+    </LinearLayout>
+
+</RelativeLayout>

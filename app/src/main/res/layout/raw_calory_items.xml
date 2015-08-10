@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:id="@+id/rl_mainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="20dp" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtCaloryItem"
+        style="@style/style3.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_txtCalories"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        slk:typeface="font/ClementePDae-Light.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtCalories"
+        style="@style/style3.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/iv_imgCheck"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        slk:typeface="font/ClementePDae-Light.otf" />
+
+    <ImageView
+        android:id="@+id/iv_imgCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_tik"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

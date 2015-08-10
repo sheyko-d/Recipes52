@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+    <ExpandableListView
+        android:id="@+id/el_dietHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view"
+        android:cacheColorHint="#00000000"
+        android:childDivider="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_no_history_found"
+        style="@style/style3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/str_no_history_found"
+        android:visibility="gone"
+        slk:typeface="font/ClementePDaa-Hairline.otf" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_all_filter"
+        android:checkable="true"
+        android:title="@string/str_all"/>
+    <item
+        android:id="@+id/menu_pending"
+        android:checkable="true"
+        android:title="@string/str_filter_pending"/>
+    <item
+        android:id="@+id/menu_rejected"
+        android:checkable="true"
+        android:title="@string/str_filter_rejected"/>
+    <item
+        android:id="@+id/menu_apprived"
+        android:checkable="true"
+        android:title="@string/str_filter_approved"/>
+
+</menu>

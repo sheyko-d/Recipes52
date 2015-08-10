@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/str_edit_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_title_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/add_margin"
+        android:layout_marginTop="@dimen/add_margin"
+        android:drawableLeft="@drawable/ic_bulb"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="@dimen/add_hint_padding"
+        android:paddingRight="@dimen/add_hint_padding"
+        android:text="@string/str_edit_title_hint"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/add_hint_txt_size"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomEditText
+        android:id="@+id/editTitleEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/edit_margin"
+        android:layout_marginRight="@dimen/edit_margin"
+        android:background="@drawable/ic_time_patch"
+        android:gravity="center_vertical"
+        android:hint="@string/str_title_edittxt_hint"
+        android:inputType="textNoSuggestions"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="@dimen/edit_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <ImageView
+        android:id="@+id/editTitleClearImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTitleEdittxt"
+        android:layout_alignRight="@+id/editTitleEdittxt"
+        android:layout_alignTop="@+id/editTitleEdittxt"
+        android:layout_marginBottom="@dimen/edit_edittxt_cancel_margin_vertical"
+        android:layout_marginRight="@dimen/edit_edittxt_cancel_margin_horizontal"
+        android:layout_marginTop="@dimen/edit_edittxt_cancel_margin_vertical"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:onClick="clearTitle"
+        android:src="@drawable/ic_edittxt_cancel" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTitleEdittxt"
+        android:layout_marginLeft="@dimen/edit_margin"
+        android:layout_marginRight="@dimen/edit_margin"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/CustomTextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/edit_margin_small"
+                android:gravity="center"
+                android:text="@string/str_edit_measurment_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/add_title_txt_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/editMeasurementTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_time_patch"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="chooseMeasurement"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/edit_txt_size_large"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="info"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="@dimen/edit_margin_small"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_edit_kcal_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/add_title_txt_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_info" />
+            </LinearLayout>
+
+            <com.stockholmapplab.recipes.typeface.CustomEditText
+                android:id="@+id/editKcalEdittxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_time_patch"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/edit_txt_size_large"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/editPerUnitSubtitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="@dimen/edit_margin_small"
+        android:text="@string/str_edit_per_init_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/edit_subtitle_txt_size"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomButton
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="@dimen/edit_margin"
+        android:layout_marginRight="@dimen/edit_margin"
+        android:background="@drawable/button_selector"
+        android:onClick="create"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="@string/str_update_item"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/recipes_btn_text_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+</RelativeLayout>

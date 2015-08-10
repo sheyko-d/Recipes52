@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    xmlns:blurView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ingredient_title_margin"
+                    android:layout_marginRight="@dimen/ingredient_title_margin"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/str_ingredients"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/ingredient_title_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+
+                <ListView
+                    android:id="@+id/ingredientsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    android:layout_marginBottom="@dimen/ingredient_margin"
+                    android:layout_marginRight="@dimen/ingredient_margin"
+                    android:layout_marginTop="@dimen/details_margin_small"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/ingredient_title_margin"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="2dp"
+                    android:text="@string/str_screenshots"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/ingredient_title_size"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/details_margin"
+                    android:layout_marginRight="@dimen/details_margin"
+                    android:layout_marginTop="@dimen/details_margin_small"
+                    android:layout_weight="1"
+                    android:background="#dbdbdb"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/detailsScreenshotImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="fullScreen"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="right"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="fullScreen"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_fullscreen" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_patch" />
+
+                    <ProgressBar
+                        android:id="@+id/screenshotProgressBar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/detailsTimeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/ic_time"
+                        android:drawablePadding="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/details_info_txt_size"
+                        slk:typeface="font/ClementePDai-Regular.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/detailsKcalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="8dp"
+                        android:drawableLeft="@drawable/ic_kcal"
+                        android:drawablePadding="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/details_info_txt_size_small"
+                        slk:typeface="font/ClementePDai-Regular.otf" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ratingBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/list_ingredient"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="share"
+                    android:src="@drawable/ic_facebook" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:onClick="share"
+                    android:text="@string/str_share"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/ingredient_title_size_small"
+                    slk:typeface="font/ClementePDam-Bold.otf" />
+            </LinearLayout>
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/recipesRatingTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/ingredient_title_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <FrameLayout
+                android:id="@+id/detailsRatingBarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipesRatingTxt"
+                android:layout_centerHorizontal="true" >
+
+                <RatingBar
+                    android:id="@+id/detailsRatingBar"
+                    style="@style/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:isIndicator="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="72dp"
+                    android:clickable="true"
+                    android:onClick="rate" >
+                </View>
+            </FrameLayout>
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailsRatingBarLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:text="@string/str_rate_directions"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/ingredient_rating_txt_size"
+                slk:typeface="font/ClementePDae-Light.otf" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/detailsDescTxtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view1"
+            android:layout_below="@+id/ratingBarLayout"
+            android:layout_toRightOf="@+id/view1" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/detailsDescTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/ingredient_desc_txt_size"
+                slk:typeface="font/ClementePDag-Book.otf" />
+        </ScrollView>
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/detailsAuthorTxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adminBtnsLayout"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/details_margin_large"
+            android:paddingTop="16dp"
+            android:text="@string/str_author"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/ingredient_title_size"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detailsAuthorTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ratingBarLayout"
+            android:background="@drawable/ic_top_bar" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/detailsAuthorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adminBtnsLayout"
+            android:layout_toRightOf="@+id/detailsAuthorTxtTitle"
+            android:ellipsize="end"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/details_margin"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/ingredient_title_size"
+            slk:typeface="font/ClementePDae-Light.otf" />
+
+        <ImageView
+            android:id="@+id/detailsAuthorImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adminBtnsLayout"
+            android:layout_toRightOf="@+id/detailsAuthorTxt"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:onClick="email"
+            android:src="@drawable/ic_new"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/adminBtnsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/recipes_vertical_margin"
+            android:layout_marginLeft="@dimen/recipes_horizontal_margin"
+            android:layout_marginRight="@dimen/recipes_horizontal_margin"
+            android:orientation="horizontal" >
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/editBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:onClick="edit"
+                android:text="@string/str_summary_editing"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/recipes_btn_text_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/reviewBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:onClick="review"
+                android:text="@string/str_summary_submit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/recipes_btn_text_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/detailsLargeImgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="closeFullscreen"
+        android:visibility="invisible" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detailsViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/summaryEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit1"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="@string/str_summary_edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit2"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="@string/str_summary_edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="60dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit3"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="@string/str_summary_edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="130dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit4"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="130dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit5"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginRight="38dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit6"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/str_summary_edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="38dp"
+            android:background="#ca2d2d"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_new"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="edit7"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/str_summary_edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+    </RelativeLayout>
+
+</RelativeLayout>

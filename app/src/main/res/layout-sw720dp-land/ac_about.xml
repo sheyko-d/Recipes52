@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/sc_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_imgScale"
+        android:layout_below="@+id/view"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/tv_txtDetails"
+            style="@style/style3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:autoLink="all"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="@string/str_details" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_imgScale"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_footer" />
+
+</RelativeLayout>

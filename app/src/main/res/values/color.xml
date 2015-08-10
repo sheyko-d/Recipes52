@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#6DAB29</color>
+    <color name="primary_dark">#4f8d0a</color>
+    
+    <color name="red">#FF0000</color>
+    <color name="black">#222222</color>
+    <color name="blue">#057CB4</color>
+    <color name="gray">#797979</color>
+    <color name="dark_gray">#4C4C4C</color>
+    <color name="light_gray">#B3B3B3</color>
+    <color name="orange">#FF8000</color>
+    <color name="green">#6DAB29</color>
+    <color name="cream">#F7F6E5</color>
+    <color name="hint_color">#B3B3B3</color>
+    <color name="grey_pressed">#000000</color>
+    <color name="grey_unpressed">#BAB9B1</color>
+    <color name="bold_grey_color">#666666</color>
+    <color name="blur_color">#CCCCCC</color>
+    <color name="rate_dialog_seprator_color">#B7B7B6</color>
+    <color name="rate_dialog_text_color">#007AFF</color>
+    <color name="login_activity_bg_gradient_start">#C7D637</color>
+    <color name="login_activity_bg_gradient_end">#6F9F05</color>
+    
+    <color name="list_green_light">#f1f0e0</color>
+    <color name="list_green_dark">#dbe3b6</color>
+    <color name="list_ingredient">#cdde98</color>
+    <color name="hint">#5768b1</color>
+
+</resources>

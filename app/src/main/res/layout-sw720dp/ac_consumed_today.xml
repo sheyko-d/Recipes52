@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_relativeConsumedToday_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <ImageView
+                android:id="@+id/iv_imgCalendar"
+                android:layout_width="@dimen/consumed_calendar_width"
+                android:layout_height="@dimen/consumed_calendar_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/calendar"
+                android:contentDescription="@string/app_name"
+                android:onClick="onViewClick" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_relativeConsumedToday_3"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txtDietTime"
+                style="@style/style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:paddingBottom="12dp"
+                android:paddingRight="20dp"
+                android:text="@string/str_diet_time"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/bt_btnDietTime"
+                style="@style/style19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_txtDietTime"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_time_patch"
+                slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_relativeConsumedToday_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_relativeConsumedToday_4"
+            android:layout_below="@+id/rl_relativeConsumedToday_2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/list_border"
+            android:onClick="onViewClick"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txt_Info"
+                style="@style/style24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_bulb"
+                android:drawablePadding="20dp"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp"
+                slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingLeft="@dimen/consumed_padding_left"
+                android:paddingRight="@dimen/consumed_padding_right"
+                android:paddingTop="@dimen/consumed_padding_top" >
+
+                <LinearLayout
+                    android:id="@+id/lv_foodItemLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_relativeConsumedToday_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txt_free_value"
+                style="@style/style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_pluse_btn"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:onClick="onViewClick"
+                android:text="@string/str_free_value"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txt_from_menu"
+                style="@style/style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_txt_free_value"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_pluse_btn"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:onClick="onViewClick"
+                android:text="@string/str_from_menu"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txt_cal"
+                style="@style/style20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_txt_until_food"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_txt_free_value"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/tv_txt_until_food"
+                style="@style/style20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bt_btn_Diet_Food_Time"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                slk:typeface="font/ClementePDae-Light.otf" />
+
+            <LinearLayout
+                android:id="@+id/ll_reminder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_txt_from_menu"
+                android:layout_marginTop="10dp"
+                android:padding="5dp" >
+
+                <com.stockholmapplab.recipes.typeface.CustomButton
+                    android:id="@+id/bt_btn_Reminder"
+                    style="@style/style6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_blue_patch_right"
+                    android:onClick="onViewClick"
+                    android:textColor="@drawable/ac_about_text_selector"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+            </LinearLayout>
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/bt_btn_Diet_Food_Time"
+                style="@style/style19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_reminder"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/ic_time_patch"
+                slk:typeface="font/ClementePDao-Heavy.otf" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

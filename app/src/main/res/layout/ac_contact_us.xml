@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/emailImg"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="@dimen/contact_us_margin_left"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/about_contact_us_email_icon" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/str_contact_us"
+            android:textColor="#555555"
+            android:textSize="26sp"
+            slk:typeface="font/ClementePDae-Light.otf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/et_edt_title"
+            style="@style/style5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/contact_us_margin_left"
+            android:layout_marginRight="@dimen/contact_us_margin_right"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_time_patch"
+            android:hint="@string/str_title_1"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_edt_title"
+            android:layout_alignRight="@+id/et_edt_title"
+            android:layout_alignTop="@+id/et_edt_title"
+            android:layout_marginBottom="@dimen/edit_edittxt_cancel_margin_vertical"
+            android:layout_marginRight="@dimen/edit_edittxt_cancel_margin_horizontal"
+            android:layout_marginTop="@dimen/edit_edittxt_cancel_margin_vertical"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:onClick="clearTitle"
+            android:src="@drawable/ic_edittxt_cancel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/et_edt_email"
+            style="@style/style5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/contact_us_margin_left"
+            android:layout_marginRight="@dimen/contact_us_margin_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_time_patch"
+            android:hint="@string/str_email_1"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_edt_email"
+            android:layout_alignRight="@+id/et_edt_email"
+            android:layout_alignTop="@+id/et_edt_email"
+            android:layout_marginBottom="@dimen/edit_edittxt_cancel_margin_vertical"
+            android:layout_marginRight="@dimen/edit_edittxt_cancel_margin_horizontal"
+            android:layout_marginTop="@dimen/edit_edittxt_cancel_margin_vertical"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:onClick="clearEmail"
+            android:src="@drawable/ic_edittxt_cancel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_relativeContactUs2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/et_edt_description"
+            style="@style/style3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/contact_us_margin_left"
+            android:layout_marginRight="@dimen/contact_us_margin_right"
+            android:background="@drawable/ic_contact_patch"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:padding="16dp"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_Info"
+            style="@style/style24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_bulb"
+            android:drawablePadding="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:textSize="14sp"
+            android:text="@string/str_request_message"
+            slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            style="?android:attr/android:progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.stockholmapplab.recipes.typeface.CustomButton
+        android:id="@+id/bt_btn_send_request"
+        style="@style/style4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:onClick="onViewClick"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@drawable/ac_white_color_selector"
+        slk:typeface="font/ClementePDao-Heavy.otf" />
+
+</LinearLayout>

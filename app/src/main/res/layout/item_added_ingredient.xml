@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/addedIngredientDeleteImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="12dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_delete" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/addedIngredientTitleTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/added_ingredient_item_txt_size"
+        slk:typeface="font/ClementePDai-Regular.otf" />
+
+    <Button
+        android:id="@+id/addedIngredientDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_red_selector"
+        android:shadowColor="@color/gray"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:textStyle="bold"
+        android:text="@string/str_delete"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/add_ingredient_delete_btn_size" />
+
+</LinearLayout>

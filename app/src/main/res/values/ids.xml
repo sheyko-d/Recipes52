@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer-array name="bigBlackDayNumberImageID">
+        <item>@drawable/one_black_big</item>
+        <item>@drawable/two_black_big</item>
+        <item>@drawable/three_black_big</item>
+        <item>@drawable/four_black_big</item>
+        <item>@drawable/five_black_big</item>
+        <item>@drawable/six_black_big</item>
+        <item>@drawable/seven_black_big</item>
+    </integer-array>
+    <integer-array name="bigGreenDayNumberImageID">
+        <item>@drawable/one_green_big</item>
+        <item>@drawable/two_green_big</item>
+        <item>@drawable/three_green_big</item>
+        <item>@drawable/four_green_big</item>
+        <item>@drawable/five_green_big</item>
+        <item>@drawable/six_green_big</item>
+        <item>@drawable/seven_green_big</item>
+    </integer-array>
+    <integer-array name="smallBlackDayNumberImageID">
+        <item>@drawable/one_black_small</item>
+        <item>@drawable/two_black_small</item>
+        <item>@drawable/three_black_small</item>
+        <item>@drawable/four_black_small</item>
+        <item>@drawable/five_black_small</item>
+        <item>@drawable/six_black_small</item>
+        <item>@drawable/seven_black_small</item>
+    </integer-array>
+    <integer-array name="smallGreenDayNumberImageID">
+        <item>@drawable/one_green_small</item>
+        <item>@drawable/two_green_small</item>
+        <item>@drawable/three_green_small</item>
+        <item>@drawable/four_green_small</item>
+        <item>@drawable/five_green_small</item>
+        <item>@drawable/six_green_small</item>
+        <item>@drawable/seven_green_small</item>
+    </integer-array>  		
+</resources>

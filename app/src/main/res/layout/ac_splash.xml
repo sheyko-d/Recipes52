@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_screen_patch" >
+
+    <ImageView
+        android:id="@+id/iv_imgText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_splash_screen_text" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtLoading"
+        style="@style/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_imgText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/str_loading"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+</RelativeLayout>

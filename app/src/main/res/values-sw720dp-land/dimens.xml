@@ -1,0 +1,198 @@
+<resources>
+    
+    <!-- ActionBar -->
+    <dimen name="action_bar_height">8dp</dimen>
+    <dimen name="action_bar_icon_width">72dp</dimen>
+    <dimen name="ab_ic_margin_left">6dp</dimen>
+    <dimen name="ab_ic_margin_right">2dp</dimen>
+    <dimen name="ab_ic_padding_vertical">2dp</dimen>
+    <dimen name="ab_ic_padding_horizontal">0dp</dimen>
+    <dimen name="ab_ic_width_height">48dp</dimen>
+    <dimen name="ab_txt_size">34sp</dimen>
+    <dimen name="ab_edit_ingredient_ic_margin">6dp</dimen>
+    <dimen name="ab_title_txt_margin_horizontal">84dp</dimen>
+    
+     <!-- All Dialogues Margins -->
+    <dimen name="consumed_margin_top">12dp</dimen>
+    <dimen name="consumed_padding_top">3dp</dimen>
+    <dimen name="consumed_padding_left">3dp</dimen>
+    <dimen name="consumed_padding_right">3dp</dimen>
+    <dimen name="dialogue_height">94dp</dimen>
+    <dimen name="dialog_btn_height">72dp</dimen>
+
+    <!-- Login Screen -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="login_title_text_size">32sp</dimen>
+    <dimen name="login_verion_item_text_size">28sp</dimen>
+    <dimen name="login_facebook_margin_top">48dp</dimen>
+    <dimen name="login_verion_text_size">30sp</dimen>
+    <dimen name="login_margin_vertical_small">16dp</dimen>
+    <dimen name="login_margin_vertical_large">64dp</dimen>
+    <dimen name="login_margin_horizontal">32dp</dimen>
+    <dimen name="login_btn_height_min">88dp</dimen>
+    <dimen name="login_logo_height">132dp</dimen>
+    <dimen name="login_icon_height_width">85dp</dimen>
+    <dimen name="login_verion_text_margin_bottom">2dp</dimen>
+    <dimen name="login_title_main_text_size">54sp</dimen>
+    <dimen name="login_edittext_font_size">30sp</dimen>
+    <dimen name="login_back_text_size">38sp</dimen>
+    <dimen name="login_back_text_padding">4dp</dimen>
+    <dimen name="login_back_drawable_padding">12dp</dimen>
+    <dimen name="login_edittxt_padding_vertical">12dp</dimen>
+    <dimen name="login_edittxt_padding_horizontal">24dp</dimen>
+    <dimen name="login_verion_text_margin_top">42dp</dimen>
+    <dimen name="login_version_padding_left">8dp</dimen>
+    <dimen name="login_verion_item_text_padding_horizontal">16dp</dimen>
+    <dimen name="login_verion_item_text_margin_top">4dp</dimen>
+    <dimen name="login_password_margin_top">24dp</dimen>
+
+    <!-- Home Screen -->
+    <dimen name="home_margin_top_linear_2">20dp</dimen>
+    <dimen name="home_margin_top_linear_3">20dp</dimen>
+    <dimen name="home_txtbuild_margin_top">4dp</dimen>
+    <dimen name="home_txtbuild_padding_left">4dp</dimen>
+    <dimen name="home_txtbuild_textsize">22sp</dimen>
+    <dimen name="home_calorie_margin_left">5dp</dimen>
+    <dimen name="home_item_1_margin_left">134dp</dimen>
+    <dimen name="home_item_2_margin_left">262dp</dimen>
+    <dimen name="home_item_3_margin_left">110dp</dimen>
+    <dimen name="home_item_3_dieton_margin_left">30dp</dimen>
+    <dimen name="home_item_5_margin_right">274dp</dimen>
+    <dimen name="home_item1_padding_top">36dp</dimen>
+    <dimen name="home_txt_size">26sp</dimen>
+
+    <!-- Recipes Screen -->
+
+    <dimen name="recipe_header_margin_vertical">12dp</dimen>
+    <dimen name="recipes_item_padding_horizontal">16dp</dimen>
+    <dimen name="recipes_item_padding_top">4dp</dimen>
+    <dimen name="recipes_item_padding_bottom">10dp</dimen>
+    <dimen name="recipes_item_margin">8dp</dimen>
+    <dimen name="recipes_header_item_padding_horizontal">16dp</dimen>
+    <dimen name="recipes_header_item_padding_vertical">8dp</dimen>
+    <dimen name="recipes_item_text_size">28sp</dimen>
+    <dimen name="recipes_item_text_size_small_title">20sp</dimen>
+    <dimen name="recipes_item_text_size_small">22sp</dimen>
+    <dimen name="recipes_btn_text_size">18sp</dimen>
+    <dimen name="recipes_header_item_text_size">32sp</dimen>
+    <dimen name="recipes_searchtext_size">26sp</dimen>
+    <dimen name="recipes_header_item_text_size_small">26sp</dimen>
+    <dimen name="recipes_categories_txt_size">24sp</dimen>
+    <dimen name="recipes_tabs_txt_size">30sp</dimen>
+    <dimen name="recipes_tabs_height">48dp</dimen>
+    <dimen name="recipes_norecipes_txtsize">24sp</dimen>
+    <dimen name="recipes_norecipes_padding">64dp</dimen>
+    <dimen name="recipes_horizontal_margin_small">8dp</dimen>
+    <dimen name="recipes_vertical_margin_small">4dp</dimen>
+    <dimen name="recipes_horizontal_margin">48dp</dimen>
+    <dimen name="recipes_vertical_margin">24dp</dimen>
+    <dimen name="recipes_vertical_margin_large">24dp</dimen>
+    
+    <dimen name="border_horizontal_margin">44dp</dimen>
+    <dimen name="border_vertical_margin">16dp</dimen>
+    
+    <!-- Settings Screen -->
+    <dimen name="setting_width">220dp</dimen>
+    <dimen name="setting_button_width">174dp</dimen>
+    <dimen name="setting_button_height">68dp</dimen>
+    
+    <!-- Recipes Details Screen -->
+    <dimen name="details_horizontal_margin">48dp</dimen>
+    <dimen name="ingredient_item_padding">12dp</dimen>
+    <dimen name="ingredient_item_padding_left">14dp</dimen>
+    <dimen name="ingredient_item_txt_size">19sp</dimen>
+    <dimen name="ingredient_item_expand_txt_size">18sp</dimen>
+    <dimen name="ingredient_title_size">26sp</dimen>
+    <dimen name="ingredient_title_size_small">22sp</dimen>
+    <dimen name="ingredient_rating_txt_size">18sp</dimen>
+    <dimen name="ingredient_title_margin">16dp</dimen>
+    <dimen name="ingredient_margin">8dp</dimen>
+    <dimen name="details_margin_large">24dp</dimen>
+    <dimen name="details_margin">16dp</dimen>
+    <dimen name="details_margin_small">8dp</dimen>
+    <dimen name="ingredient_desc_txt_size">26sp</dimen>
+    <dimen name="details_info_txt_size">26sp</dimen>
+    <dimen name="details_info_txt_size_small">25sp</dimen>
+    <dimen name="details_img_large_margin">8dp</dimen>
+    
+    <!-- Calory Menu Activity -->
+    <dimen name="calory_menu_width">124dp</dimen>
+    
+     <!-- My Stats Screen -->
+    <dimen name="my_stats_paddin_top">18dp</dimen>
+    <dimen name="my_stats_paddin_bottom">18dp</dimen>
+    
+    <!-- Step By Step Help Guide -->
+    <dimen name="help_calendar_width">225dp</dimen>
+    <dimen name="help_calendar_height">225dp</dimen>
+    <dimen name="help_calorie_width">284dp</dimen>
+    <dimen name="help_calorie_height">50dp</dimen>
+    <dimen name="help_step_by_step_margin_top">35dp</dimen>
+    <dimen name="help_step_by_ste_back_margin_top_minus">-7dp</dimen>
+    
+    <!-- Ingredients Screen -->
+    <dimen name="ingredients_title_txt_size">36sp</dimen>
+    <dimen name="ingredients_title_txt_padding">36dp</dimen>
+    <dimen name="ingredient_item_large_txt_size">30sp</dimen>
+    <dimen name="ingredient_item_large_padding_vertical">32dp</dimen>
+    <dimen name="ingredient_item_large_padding_horizontal">24dp</dimen>
+    
+    <!-- Advanced Search Screen -->
+    <dimen name="search_margin_small">16dp</dimen>
+    <dimen name="search_margin_large">36dp</dimen>
+    <dimen name="search_txt_size">36sp</dimen>
+    <dimen name="search_txt_size_large">46sp</dimen>
+    <dimen name="search_spinner_width">420dp</dimen>
+    <dimen name="search_btn_text_size">30sp</dimen>
+    
+    <!-- Add Recipe Screen -->
+    <dimen name="add_margin_small">16dp</dimen>
+    <dimen name="add_margin">32dp</dimen>
+    <dimen name="add_padding">12dp</dimen>
+    <dimen name="add_margin_large">48dp</dimen>
+    <dimen name="add_margin_largest">64dp</dimen>
+    <dimen name="add_margin_btns">24dp</dimen>
+    <dimen name="add_btns_size">26sp</dimen>
+    <dimen name="add_indicator_margin">12dp</dimen>
+    <dimen name="add_photo_margin">16dp</dimen>
+    <dimen name="add_photo_txt_size">23sp</dimen>
+    <dimen name="add_bottom_hint_txt_size">26sp</dimen>
+    <dimen name="add_arrow_img_height">126dp</dimen>
+    <dimen name="add_padding_bottom">72dp</dimen>
+    <dimen name="add_remove_txt_size">32sp</dimen>
+    <dimen name="add_metrics_btns_size">28sp</dimen>
+    <dimen name="add_metrics_btns_height">48dp</dimen>
+    <dimen name="add_totalkcal_txt_size">40sp</dimen>
+    <dimen name="add_guide_edittxt_margin_vertical">12dp</dimen>
+    <dimen name="add_guide_edittxt_margin_horizontal">22dp</dimen>
+    <dimen name="add_guide_edittxt_padding">24dp</dimen>
+    <dimen name="add_guide_edittxt_size">32sp</dimen>
+    <dimen name="add_ingredient_hint_width">420dp</dimen>
+    <dimen name="add_ingredient_txt_size">28sp</dimen>
+    <dimen name="add_ingredient_delete_btn_size">24sp</dimen>
+    <dimen name="add_title_txt_size">30sp</dimen>
+    <dimen name="add_hint_txt_size">22sp</dimen>
+    <dimen name="add_hint_padding">16dp</dimen>
+    <dimen name="add_txt_size">34sp</dimen>
+    <dimen name="added_ingredient_item_txt_size">26sp</dimen>
+    
+    <!-- Edit Ingredients Screen -->
+    <dimen name="edit_margin">64dp</dimen>
+    <dimen name="edit_margin_small">32dp</dimen>
+    <dimen name="edit_subtitle_txt_size">28sp</dimen>
+    <dimen name="edit_txt_size_large">38sp</dimen>
+    <dimen name="edit_txt_size">30sp</dimen>
+    <dimen name="edit_edittxt_cancel_margin_vertical">8dp</dimen>
+    <dimen name="edit_edittxt_cancel_margin_horizontal">16dp</dimen>
+    
+    <!-- Quick Start Screen -->
+    <dimen name="quick_padding_left">130dp</dimen>
+    <dimen name="quick_padding_right">48dp</dimen>
+    <dimen name="quick_margin_left_1">15dp</dimen>
+    <dimen name="quick_margin_left_2">25dp</dimen>
+    <dimen name="quick_padding_bottom_1">5dp</dimen>
+    <dimen name="quick_paddin_top_1">5dp</dimen>
+    <dimen name="quick_padding_bottom_2">30dp</dimen>
+    <dimen name="quick_padding_top_2">30dp</dimen>
+    
+</resources>

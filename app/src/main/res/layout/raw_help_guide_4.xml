@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtpreffered_item"
+        style="@style/style4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/str_preffered_item"
+        slk:typeface="font/ClementePDao-Heavy.otf" />
+
+    <LinearLayout
+        android:id="@+id/ll_help_guide_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btnCalorieMenu"
+            style="@style/style6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/ic_blue_patch_right"
+            android:text="@string/str_calorie_menu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@drawable/ac_about_text_selector"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+    </LinearLayout>
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtEasy_Use"
+        style="@style/style26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_help_guide_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_bulb"
+        android:drawablePadding="10dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/str_easy_use"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stockholmapplab.recipes.typeface.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:ellipsize="end"
+    android:onClick="largeIngList"
+    android:paddingBottom="@dimen/ingredient_item_padding"
+    android:paddingLeft="@dimen/ingredient_item_padding_left"
+    android:paddingRight="@dimen/ingredient_item_padding"
+    android:paddingTop="@dimen/ingredient_item_padding"
+    android:singleLine="true"
+    android:text="@string/str_list_expand"
+    android:textColor="@color/black"
+    android:textSize="@dimen/ingredient_item_expand_txt_size"
+    slk:typeface="font/ClementePDam-Bold.otf" />

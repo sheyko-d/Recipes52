@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/consumed_padding_left"
+    android:layout_marginRight="@dimen/consumed_padding_right"
+    android:background="@drawable/ic_single_line_dialog_background" >
+
+	<com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txtCalendarValidation"
+        style="@style/style3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        slk:typeface="font/ClementePDak-SemiBold.otf" />
+	
+	
+	 <LinearLayout
+        android:id="@+id/ll_linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialogue_height"
+        android:layout_below="@+id/tv_txtCalendarValidation"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btn_ok"
+            style="@style/style5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ac_blue_patch_selector"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

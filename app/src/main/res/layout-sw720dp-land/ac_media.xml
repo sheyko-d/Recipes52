@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="7dp"
+                android:background="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/logo_top_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/media_logo" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_twitter"
+                    android:gravity="center_horizontal"
+                    android:onClick="twitter"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_twitter"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_facebook"
+                    android:gravity="center_horizontal"
+                    android:onClick="facebook"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_media_facebook"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_www"
+                    android:gravity="center_horizontal"
+                    android:onClick="web"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_web"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_google_plus"
+                    android:gravity="center_horizontal"
+                    android:onClick="google"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_google"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@null"
+                android:src="@drawable/media_separator" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="36dp"
+                android:contentDescription="@null"
+                android:src="@drawable/media_logo_sal" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_www_sal"
+                    android:gravity="center_horizontal"
+                    android:onClick="webSal"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_web"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_twitter"
+                    android:gravity="center_horizontal"
+                    android:onClick="twitterSal"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_twitter"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    android:visibility="gone"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_facebook"
+                    android:gravity="center_horizontal"
+                    android:onClick="facebookSal"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_media_facebook"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    android:visibility="gone"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_more_apps"
+                    android:gravity="center_horizontal"
+                    android:onClick="more"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_more"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    android:visibility="gone"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_contact_us"
+                    android:gravity="center_horizontal"
+                    android:onClick="contact"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_contact"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    android:visibility="gone" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/CustomTextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/media_about"
+                    android:gravity="center_horizontal"
+                    android:onClick="about"
+                    android:padding="@dimen/icon_padding"
+                    android:text="@string/str_about"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/icon_txt_size"
+                    slk:typeface="font/ClementePDae-Light.otf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_footer" />
+
+</LinearLayout>

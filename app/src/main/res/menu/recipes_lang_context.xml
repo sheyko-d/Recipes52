@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_all"
+        android:checkable="true"
+        android:title="@string/str_all"/>
+    
+    <item
+        android:id="@+id/menu_en"
+        android:checkable="true"
+        android:title="@string/str_lang_en"/>
+    
+    <item
+        android:id="@+id/menu_sv"
+        android:checkable="true"
+        android:title="@string/str_lang_sv"/>
+
+</menu>

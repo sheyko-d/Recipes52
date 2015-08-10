@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/add_padding_bottom" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/str_guide_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_title_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/add_margin"
+        android:drawableLeft="@drawable/ic_bulb"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="@dimen/add_hint_padding"
+        android:paddingRight="@dimen/add_hint_padding"
+        android:text="@string/str_guide_hint"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/add_hint_txt_size"
+        slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomEditText
+        android:id="@+id/addGuideEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/add_guide_edittxt_margin_vertical"
+        android:layout_marginLeft="@dimen/add_guide_edittxt_margin_horizontal"
+        android:layout_marginRight="@dimen/add_guide_edittxt_margin_horizontal"
+        android:layout_marginTop="@dimen/add_guide_edittxt_margin_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/guide_editxt_patch"
+        android:gravity="top"
+        android:padding="@dimen/add_guide_edittxt_padding"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/add_guide_edittxt_size"
+        slk:typeface="font/ClementePDae-Light.otf" >
+
+        <requestFocus />
+    </com.stockholmapplab.recipes.typeface.CustomEditText>
+
+</LinearLayout>

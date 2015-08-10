@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.MyTextView
+                    android:id="@+id/tv_txtDuration"
+                    style="@style/style2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_duration"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <SeekBar
+                    android:id="@+id/sk_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:max="104"
+                    android:layout_marginLeft="@dimen/quick_padding_left"
+                    android:layout_marginRight="@dimen/quick_padding_right"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/ic_progress_slider"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/ic_progress_thumb" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtWeeks"
+                    style="@style/style4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sk_seekBar"
+                    android:gravity="center"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relative2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relative1"
+                android:background="@drawable/ic_orrange_transparent_patch"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.MyTextView
+                    android:id="@+id/tv_txtIntensity"
+                    style="@style/style2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_intensity_1"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <LinearLayout
+                    android:id="@+id/ll_linear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="onViewClick"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_linear11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onViewClick"
+                        android:orientation="vertical" >
+
+                        <com.stockholmapplab.recipes.typeface.CustomTextView
+                            android:id="@+id/tv_txt52"
+                            style="@style/style7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/str_52"
+                            slk:typeface="font/ClementePDar-UltraBoldItali.otf" />
+
+                        <ImageView
+                            android:id="@+id/iv_img52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/raw_radio_button_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_linear12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/quick_margin_left_1"
+                        android:onClick="onViewClick"
+                        android:orientation="vertical" >
+
+                        <com.stockholmapplab.recipes.typeface.CustomTextView
+                            android:id="@+id/tv_txt43"
+                            style="@style/style7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/str_43"
+                            slk:typeface="font/ClementePDar-UltraBoldItali.otf" />
+
+                        <ImageView
+                            android:id="@+id/iv_img43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/raw_radio_button_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_linear13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/quick_margin_left_1"
+                        android:onClick="onViewClick"
+                        android:orientation="vertical" >
+
+                        <com.stockholmapplab.recipes.typeface.CustomTextView
+                            android:id="@+id/tv_txt61"
+                            style="@style/style7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/str_61"
+                            slk:typeface="font/ClementePDar-UltraBoldItali.otf" />
+
+                        <ImageView
+                            android:id="@+id/iv_img61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/raw_radio_button_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.stockholmapplab.recipes.typeface.MyTextView
+                    android:id="@+id/tv_txtweekday"
+                    style="@style/style17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/ll_linear1"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomButton
+                    android:id="@+id/bt_btn_select_calendar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/ac_arrow_selector"
+                    android:onClick="onViewClick" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relative3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relative2"
+                android:paddingBottom="@dimen/quick_padding_bottom_1"
+                android:paddingTop="@dimen/quick_paddin_top_1" >
+
+                <com.stockholmapplab.recipes.typeface.MyTextView
+                    android:id="@+id/tv_txtCaloryPerDay"
+                    style="@style/style2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_caloriesperday"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <LinearLayout
+                    android:id="@+id/ll_quick_start_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomButton
+                        android:id="@+id/bt_btnCalorie"
+                        style="@style/style11"
+                        android:layout_width="@dimen/help_calorie_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_time_patch"
+                        android:onClick="onViewClick"
+                        slk:typeface="font/ClementePDao-Heavy.otf" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relative4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relative3"
+                android:background="@drawable/ic_orrange_transparent_patch"
+                android:paddingBottom="@dimen/quick_padding_bottom_2"
+                android:paddingTop="@dimen/quick_padding_top_2" >
+
+                <com.stockholmapplab.recipes.typeface.MyTextView
+                    android:id="@+id/tv_txtMenu"
+                    style="@style/style2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:text="@string/str_menu"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <LinearLayout
+                    android:id="@+id/ll_quick_start_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomButton
+                        android:id="@+id/bt_btnCalorieMenu"
+                        style="@style/style6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_blue_patch_right"
+                        android:onClick="onViewClick"
+                        android:text="@string/str_calorie_menu"
+                        android:textColor="@drawable/ac_about_text_selector"
+                        slk:typeface="font/ClementePDao-Heavy.otf" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relative5"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/rl_relative4"
+                android:layout_marginLeft="78dp"
+                android:layout_marginRight="78dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_object" >
+
+                <LinearLayout
+                    android:id="@+id/ll_quick_start_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomButton
+                        android:id="@+id/bt_btnStart"
+                        style="@style/style6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_start_patch"
+                        android:onClick="onViewClick"
+                        android:text="@string/str_start"
+                        android:textColor="@drawable/ac_about_text_selector"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

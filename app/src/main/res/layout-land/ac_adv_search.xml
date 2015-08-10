@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/search_margin_small"
+        android:layout_marginLeft="@dimen/search_margin_small"
+        android:layout_marginRight="@dimen/search_margin_small"
+        android:layout_marginTop="2dp"
+        android:paddingTop="@dimen/search_margin_small"
+        android:text="@string/str_recipe_category"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/search_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/spinnerTxt1"
+        android:layout_width="@dimen/search_spinner_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/search_margin_small"
+        android:background="@drawable/ic_time_patch"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:onClick="recipeCategory"
+        android:singleLine="true"
+        android:text="@string/str_txt_placeholder"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/search_txt_size_large"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerTxt1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/search_margin_small"
+        android:paddingTop="@dimen/search_margin_small"
+        android:text="@string/str_recipe_type"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/search_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/spinnerTxt2"
+        android:layout_width="@dimen/search_spinner_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/search_margin_small"
+        android:background="@drawable/ic_time_patch"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:onClick="recipeType"
+        android:singleLine="true"
+        android:text="@string/str_txt_placeholder"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/search_txt_size_large"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerTxt2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/search_margin_small"
+        android:paddingTop="@dimen/search_margin_small"
+        android:text="@string/str_calorie_limit"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/search_txt_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/spinnerTxt3"
+        android:layout_width="@dimen/search_spinner_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/search_margin_small"
+        android:background="@drawable/ic_time_patch"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:onClick="calorieLimit"
+        android:singleLine="true"
+        android:text="@string/str_txt_placeholder"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/search_txt_size_large"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerTxt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_selector"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:onClick="search"
+        android:text="@string/str_search_btn"
+        android:textColor="@color/black"
+        android:textSize="@dimen/search_btn_text_size"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+</RelativeLayout>

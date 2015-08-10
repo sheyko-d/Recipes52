@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    xmlns:blurView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <com.stockholmapplab.recipes.views.ControllableViewPager
+        android:id="@+id/addViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/indicatorLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="7dp"
+        android:isScrollContainer="false"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/add_margin"
+        android:layout_marginLeft="@dimen/add_margin"
+        android:layout_marginRight="@dimen/add_margin"
+        android:layout_marginTop="12dp"
+        android:text="@string/str_swipe_hint"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/add_bottom_hint_txt_size"
+        slk:typeface="font/ClementePDae-Light.otf" />
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/addPageIndicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/add_indicator_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_page_indicator_enabled" />
+
+        <ImageView
+            android:id="@+id/addPageIndicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/add_indicator_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_page_indicator_disabled" />
+
+        <ImageView
+            android:id="@+id/addPageIndicator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/add_indicator_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_page_indicator_disabled" />
+
+        <ImageView
+            android:id="@+id/addPageIndicator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_page_indicator_disabled" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addArrowNext"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/add_arrow_img_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/add_margin"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="next"
+        android:src="@drawable/ic_arrow_next" />
+
+    <ImageView
+        android:id="@+id/addArrowPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/add_arrow_img_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/add_margin"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="previous"
+        android:src="@drawable/ic_arrow_previous"
+        android:visibility="gone" />
+
+</RelativeLayout>

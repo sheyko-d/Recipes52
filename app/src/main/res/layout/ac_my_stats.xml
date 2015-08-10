@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_linear1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtDuration"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_duration"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtDurationInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear1"
+                android:background="@drawable/ic_green_transparent_patch"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtTimeLeft"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_time_left"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtTimeLeftInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear2"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtIntensity"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_intensity_1"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtIntensityInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear3"
+                android:background="@drawable/ic_green_transparent_patch"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtFastingDays"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_fasting_days_1"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtFastingDaysInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear4"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtFastingDaysMissed"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_fasting_days_missed"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtFastingDaysMissedInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear5"
+                android:background="@drawable/ic_green_transparent_patch"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtPoints"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_points_1"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtPointsInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linear7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear6"
+                android:paddingBottom="@dimen/my_stats_paddin_bottom"
+                android:paddingTop="@dimen/my_stats_paddin_top" >
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtAchievementsPoints"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/str_achievement_points"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtAchievementsPointsInNumber"
+                    style="@style/style_my_state_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    slk:typeface="font/ClementePDak-SemiBold.otf" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_linear8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_linear7"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/fl_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txtCurrent_Body_stats"
+                        style="@style/style_my_state_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="2dp"
+                        android:onClick="onViewClick"
+                        android:padding="5dp"
+                        android:text="@string/str_current_body_stats"
+                        android:textColor="@drawable/ac_text_my_stats_selector"
+                        android:textSize="12sp"
+                        slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_badge"
+                        style="@style/style19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_red_badge"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtDiet_Cycle_History"
+                    style="@style/style_my_state_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fl_frame"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/ic_weight_calander"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:onClick="onViewClick"
+                    android:padding="5dp"
+                    android:text="@string/str_diet_cycle_history_1"
+                    android:textColor="@drawable/ac_text_my_stats_selector"
+                    android:textSize="12sp"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtAchievements"
+                    style="@style/style_my_state_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_txtDiet_Cycle_History"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/ic_achievment"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:onClick="onViewClick"
+                    android:padding="5dp"
+                    android:text="@string/str_achievements"
+                    android:textColor="@drawable/ac_text_my_stats_selector"
+                    android:textSize="12sp"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/tv_txtShare"
+                    style="@style/style_my_state_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_txtAchievements"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/ic_share"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:onClick="onViewClick"
+                    android:padding="5dp"
+                    android:text="@string/str_share"
+                    android:textColor="@drawable/ac_text_my_stats_selector"
+                    android:textSize="12sp"
+                    slk:typeface="font/ClementePDao-Heavy.otf" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

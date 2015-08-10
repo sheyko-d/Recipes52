@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/setting_item_padding_vertical"
+        android:paddingLeft="@dimen/setting_item_padding_horizontal"
+        android:paddingRight="@dimen/setting_item_padding_horizontal"
+        android:paddingTop="@dimen/setting_item_padding_vertical" >
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingRight="@dimen/setting_item_padding_horizontal"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/setting_item_txtsize"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+        <CheckBox
+            android:id="@+id/settingsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/ac_reminder_toggle"
+            android:minWidth="170dp"
+            android:visibility="gone" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/settingsTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_time_patch"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="170dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/setting_edittxt_txtsize"
+            android:visibility="gone"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="170dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/setting_btn_txtsize"
+            android:visibility="gone"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/settingsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:minWidth="170dp"
+            android:paddingRight="16dp"
+            android:text="Text"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/setting_item_txtsize"
+            android:visibility="gone"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+    </LinearLayout>
+
+</FrameLayout>

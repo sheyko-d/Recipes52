@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="@dimen/consumed_padding_left"
+    android:layout_marginRight="@dimen/consumed_padding_right"
+    android:background="@drawable/ic_background_dialog_patch" >
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txt_guide1"
+        style="@style/style12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dialogues_padding_top"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/tv_txt_guide2"
+        style="@style/style3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txt_guide1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/consumed_margin_top"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+    <com.stockholmapplab.recipes.typeface.CustomButton
+        android:id="@+id/bt_btn_Cancel"
+        style="@style/style5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_txt_guide2"
+        android:layout_below="@+id/tv_txt_guide2"
+        android:layout_marginTop="@dimen/dialogue_padding_right"
+        android:layout_weight="1"
+        android:background="@drawable/ac_blue_patch_selector"
+        slk:typeface="font/ClementePDam-Bold.otf" />
+
+</RelativeLayout>

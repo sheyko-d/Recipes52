@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingTop="1dp" >
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal" >
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/searchEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_margin="@dimen/login_margin_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/ic_time_patch_small"
+            android:hint="@string/str_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/recipes_searchtext_size"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/recipesClearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/login_margin_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_selector"
+            android:onClick="clear"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/str_clear"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/recipes_btn_text_size"
+            slk:typeface="font/ClementePDam-Bold.otf" >
+        </com.stockholmapplab.recipes.typeface.CustomButton>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/recipesRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/recipesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffffff"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

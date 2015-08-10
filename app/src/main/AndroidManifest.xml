@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stockholmapplab.recipes" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application
+        android:name="com.stockholmapplab.recipes.BaseApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.stockholmapplab.recipes.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.HomeActivity"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.stockholmapplab.recipes.AboutActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.SettingsActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.StepByStepHelpGuideActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.CalorieMenuActivity"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.stockholmapplab.recipes.CalorieMenuEditActivity"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.stockholmapplab.recipes.StopDietActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.QuickStartActivity"
+            android:theme="@style/ActivityThemeWithActionBar" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.MyStatsActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.DietCycleHistoryActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.ConsumedTodayActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.ContactUsActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.FacebookLoginActivity"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name="com.stockholmapplab.recipes.AchievementsActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.BodyStatsActivity"
+            android:theme="@style/ActivityThemeWithActionBar" />
+        <activity
+            android:name="com.stockholmapplab.recipes.RecipesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.RecipeDetailsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.SummaryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.AdvSearchActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.stockholmapplab.recipes.IngredientsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.stockholmapplab.recipes.AddRecipeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.ChooseIngredientActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.EditIngredientActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.stockholmapplab.recipes.MediaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeWithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!--<activity
+            android:name="com.facebook.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme" />-->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <receiver android:name="com.stockholmapplab.recipes.NotificationReceiver" >
+        </receiver>
+    </application>
+
+</manifest>

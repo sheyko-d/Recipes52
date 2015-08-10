@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">5:2 Recept</string>
+    <string name="str_add_label">Gör ett recept</string>
+
+    <!-- <string name="hello_world">Hello world!</string> -->
+    <string name="str_facebook_share_message_1">Välkommen till 5:2 Recept Appen</string>
+    <string name="str_facebook_share_message_2">Den påminner mig om mina fastedagar och jag kan på ett väldigt enkelt sätt lägga till de saker jag vill äta och räkna ner mina kalorier.</string>
+    <!-- Splash Screen -->
+    <string name="str_loading">Laddar&#8230;</string>
+
+    <!-- Measurements -->
+    <string name="measurement_cup">kopp</string>
+    <string name="measurement_piece">stycke</string>
+    <string name="measurement_pinch">nyp</string>
+
+    <!-- Home Screen -->
+    <string name="str_start">Start</string>
+    <string name="str_myStats">Min statistik</string>
+    <string name="str_calorie">Kalorimeny</string>
+    <string name="str_used_cal">använda Kcal:</string>
+    <string name="str_cal_left">Kcal kvar:</string>
+    <string name="str_until_food">tills mat</string>
+    <string name="str_until_fasting">tills fasta</string>
+    <string name="str_diet_setting">Dietinställningar</string>
+    <string name="str_internet_connection">Kan inte koppla upp mot servern. Vänligen kolla din internetkoppling.</string>
+    <string name="use_cal">Använda kcal:</string>
+    <string name="cal_left">Kcal kvar:</string>
+    <string name="str_wait">esperar&#8230;</string>
+    <string name="str_sent_request_successful">Solicitud enviada</string>
+    <string name="str_sent_request_fail">Solicitar el envío aprovecha</string>
+    <string name="str_dont_forget">Glöm inte att det är fastedag imorgon!</string>
+
+    <!-- About Screen -->
+
+    <string name="str_about">Om</string>
+    <string name="str_details">"Den här appen är gjord för att prova eller använda sig av 5:2 Dieten.\nDen är gjord som en hjälp för dig att hålla ordning på dina dagar,resultat och lyckas med ditt mål. Min intention är inte att erbjuda recept eller kaloritabeller. Det är lätt att hitta någon annan stans.Vad jag ville göra var en app som gjorde det så lätt som möjligt fär mig att använda dieten 5:2 i mitt vanliga liv. Den påminner mig om mina fastedagar och jag kan på enklaste sätt hålla koll på vad jag äter. Det är lätt att lägga till enstaka produkter eller dina favoriter. Så enkelt som möjligt.Jag hoppas ni gillar appen också!Den här appen har kalorirestriktioner ett par dgar i veckan och normalt ätande de andra dagarna. Det kallas periodisk fasta. Den här dieten vill påstår sig ha flera olika sjukdomshämmande och viktreducerande resultat. Som andra dieter så är det olika för olika personer och eftesom det inkluderar fasta så kanske du ska konsultera en doktor innan du börjar. Den här dieten går ut på att man tar in ett väldigt lågt kaloriintag, 500 för kvinnor och 600 för män, ett par dagar i veckan vilket kallas fasta på dessa valda dgar. Dessa dagar ska inte vara i följd, men kan annars väljas hur som helst och kan ändras under tiden. de andra dagarna kan man sen äta normalt på vilket gör den här dieten väldgit lätt att leva med.Den här dieten blev populär efter BBC2's dokumentär Eat,Fast &amp; Live Longer 2012. Michael J Moselys bok The fast diet släpptes i februari 2013.\n\nMer information kan hittas på Wikipedia\nhttp://en.wikipedia.org/wiki/5:2_diet\n\nHör gärna av er till oss på SAL om ni har kritik, ideer eller uppskattning. support@sweekend.com"</string>
+    <string name="str_visit_us">Besök oss</string>
+    <string name="str_no_activity_visit_us">Ingen aktivitet att hantera för besök oss</string>
+
+    <!-- Settings Screen -->
+
+    <string name="str_setting">Inställningar</string>
+    <string name="str_reminder_on">Påminnelse aktiverad</string>
+    <string name="str_reminder_off">Påminnelser avstängda</string>
+    <string name="str_morning_reminder">Morgonpåminnelse: Tid när du vill bli påmind om din dietcykelstatus</string>
+    <string name="str_evening_reminder">Kvällspåminnelse: Tid när du får en påminnelse om morgondagens fasta.</string>
+    <string name="str_dialog_active">Hjälpdialoger är\naktiva</string>
+    <string name="str_dialog_inactive">Hälpdialoger är\ninaktiva</string>
+    <string name="str_dialog_reset">Återställ alla\nhjälpdialoger</string>
+    <string name="str_reset">Återställ</string>
+    <string name="str_reset_hints">tipsen har nollställts</string>
+    <string name="str_tap_anywhere">\tTryck var som helst för att sluta redigera</string>
+
+    <!-- Help Guide -->
+
+    <string name="str_diet_journey">Välj tiden för din fasta eller sätt den på för evigt.</string>
+    <!-- <string name="str_week">vecka</string> -->
+    <!-- <string name="str_weeks">veckor</string> -->
+
+    <string name="str_instruction">5 veckor är en normal tid att göra denna diet.
+        								   På det sättet har du ett mål att se fram mot och kolla dina resultat. Men det här är bra för din hälsa så du kan sätta den på förevigt också.</string>
+    <string name="str_intensity">Sätt din fasteintensitet.</string>
+    <string name="str_52">5:2</string>
+    <string name="str_43">4:3</string>
+    <string name="str_61">6:1</string>
+    <string name="str_recommended">Rekomenderat är 5:2.</string>
+    <string name="str_consumption">Välj din kalorikonsumtion</string>
+    <string name="str_cal">Kcal</string>
+    <string name="str_recommended_calorie">Rekommenderat är 500 kalorier för kvinnor och 600 kalorier för män. Eller skriv din egen mängd</string>
+    <string name="str_preffered_item">Lägg in dina valda produkter för dina fastedagar</string>
+    <string name="str_calorie_menu">Kalorimeny</string>
+    <string name="str_easy_use">För enklaste hantering, lägg in ett par produkter du normalt äter under en fastedag. Gör det lätt för dig! Lycka till!</string>
+    <!-- <string name="str_easy_use_menu">För enklast användning, lägg till några produkter du äter normalt under fastan. Håll det enkelt!Lycka till!</string> -->
+    <string name="str_great">Bra!</string>
+    <string name="str_ready">Du är redo att starta din diet.</string>
+    <string name="str_good_luck">Lycka till!</string>
+    <string name="str_help_guide_availability">\"Hjälpguide\" är inte tillgänglig medans du fastar. Vill du stoppa din diet?</string>
+    <string name="str_stop_diet">Stoppa Dieten</string>
+    <string name="str_fasting_days_2">och fastedagar</string>
+    <string name="str_change_calorie_menu">Du kan ändra i din kalorimeny</string>
+
+    <string-array name="diet_duration">
+        <item>1 vecka</item>
+        <item>2 veckor</item>
+        <item>5 veckor</item>
+        <item>8 veckor</item>
+        <item>10 veckor</item>
+        <item>20 veckor</item>
+        <item>Tills vidare</item>
+    </string-array>
+
+    <string name="str_start_fasting_now">Vill du börja din fastedag nu?</string>
+    <string name="str_fasting_message">Ska du börja fasta idag eller på din nästkommande fastedag?</string>
+    <string name="str_calories_validation">Du måste välja antal kalorier du får konsumera på din fastedag.</string>
+    <string name="str_fasting_intensity">Du måste välja dagar du vill fasta på.</string>
+    <string name="str_next_day">Nästa fastedag</string>
+    <string name="str_now">Nu</string>
+    <string name="str_no">Nej</string>
+    <string name="str_view">Ja tack</string>
+
+    <!-- Dialog Texts -->
+
+    <string name="str_non_fasting_day_title_1">Välkommen till din 5:2 diet</string>
+    <string name="str_non_fasting_day_title_2">Välkommen till din 4:3 diet</string>
+    <string name="str_non_fasting_day_title_3">Välkommen till din 6:1 diet</string>
+    <string name="str_non_fasting_day_sub_title">Idag är är ätdag. Du kan äta normalt. Glöm inte lägga in din kroppsstatistik. (vikt tex)</string>
+    <string name="str_fasting_day_sub_title">Fastedagen har börjat. Lista dina produkter du normalt konsumerar eller lägg in en engångsprodukt i din dagslista. Glöm inte lägga till din kroppsstatistik. (Vikt  tex)</string>
+    <string name="str_menu_dialog">Meny</string>
+    <string name="str_diet_cycle_finish_title">Dieten är avslutad!</string>
+    <string name="str_diet_cycle_finish_sub_title">Du kan göra ändringar och starta en ny diet.</string>
+    <string name="str_diet_cycle_start_title">Din diet har börjat.</string>
+    <string name="str_diet_cycle_start_sub_title">Vill du se över din kroppsstatistik?</string>
+    <string name="str_help">Vill du hoppa över \"Hjälpguiden\"? \"Hjälpguiden\" kommer leda dig steg för steg genom inställningarna.</string>
+    <string name="str_help_guide">Hjälpguide</string>
+    <string name="str_skip">Fortsätt</string>
+    <string name="str_dialog_1">du kan inte välja två dagar i rad. Du måste ha en ätdag mellan dem</string>
+    <string name="str_dialog_2">Ok</string>
+    <string name="str_dialog_3">Du kan inte välja fler dagar enligt din intensitet.Om du vill välja en annan veckodag vänligen avmarkera ett.</string>
+    <string name="str_dialog_4">ta bort produkt</string>
+    <string name="str_dialog_4_1">Vill du ta bort</string>
+    <string name="str_dialog_4_2">från din kost listan?</string>
+    <string name="str_dialog_5">Tillbaks</string>
+    <string name="str_dialog_6">Vill du ta bort post från din lista?</string>
+    <string name="str_dialog_7">Du kan inte välja färre fastedagar än din fasteintensitet</string>
+    <string name="str_dialog_8">Lägga till kalorier</string>
+    <string name="str_dialog_9">Här kan du lägga till kalorier (lägg till) eller välja från din kalorimeny (meny).</string>
+    <string name="str_dialog_10">Titel värde är tomt.</string>
+    <string name="str_dialog_11">Kcal värdet är tomt.</string>
+    <string name="str_dialog_12">Lägg</string>
+    <string name="str_dialog_13">Feed-back titeln är tom.</string>
+    <string name="str_dialog_14">Emailadressen är inte giltig.</string>
+    <string name="str_dialog_15">Feed-back meddelandet saknas.</string>
+    <string name="str_dialog_16">Din förfrågan har sänts.</string>
+    <string name="str_dialog_17">Tar bort konsumerade artiklar</string>
+    <string name="str_dialog_18">Konsumera</string>
+    <!-- <string name="str_dialog_18">Är du säker på att du vill ta bort ägg från dina konsumerade produkter?</string> -->
+
+    <string name="str_dialog_19">Välkommen till Hälsodietappen!</string>
+    <string name="str_dialog_20">Är det här den första gången du använder denna app?</string>
+    <string name="str_dialog_21">Ja</string>
+    <string name="str_dialog_23">Du har</string>
+    <string name="str_dialog_24">Hello</string>
+    <string name="str_dialog_25">Detta är din kost dagbok.Du kan spåra kalorier du förbrukat under day.You kan gå till Inställningar i fall du vill konfigurera påminnelser.</string>
+    <string name="str_dialog_26">kalorier kvar.Vill du äta något?</string>
+    <string name="str_stop_diet_cycle">Stoppa dieten!</string>
+    <string name="str_stop_diet_cycle_message">Är du säker på att du vill avbryta dieten?</string>
+    <string name="str_title">titel</string>
+    <string name="str_kcal">kcal</string>
+
+    <!-- Calorie Menu Activity -->
+    <string name="str_remind_1_hour">Påminner 1 timme</string>
+    <string name="str_item">post</string>
+    <string name="str_done">gjort</string>
+    <string name="str_edit">Redigera</string>
+    <string name="str_remove">Ta bort</string>
+    <string name="str_open_todays_list">Öppna Dagens Lista</string>
+    <string name="str_calorie_add_item">Lägga varorna</string>
+    <string name="str_calorie_add_items">Lägg till objekt</string>
+    <string name="str_update_item">uppdateringspost</string>
+    <string name="str_dialog_title">Tidskrävande artiklar</string>
+    <string name="str_dialog_consume_1">Konsumerar</string>
+    <string name="str_dialog_consume_2">Artiklar</string>
+
+    <!-- Stop Diet setting -->
+    <string name="str_6_1">Du måste välja 1 dag(ar) enligt din 6:1 fasteintensitet.</string>
+    <string name="str_5_2">Du måste välja 2 dag(ar) enligt din 5:2 fasteintensitet.</string>
+    <string name="str_4_3">Du måste välja 3 dag(ar) enligt din 4:3 fasteintensitet.</string>
+
+    <!-- Quick Start Activity -->
+
+    <string name="str_quick_start">Snabbstart</string>
+    <string name="str_duration">Varaktighet</string>
+    <string name="str_intensity_1">Intensitet</string>
+    <string name="str_caloriesperday">Kalorier/\ndag</string>
+    <string name="str_menu">Meny</string>
+
+    <!-- My Stats Activity -->
+    <string name="str_time_left">Tid kvar</string>
+    <string name="str_fasting_days_1">Fastedagar</string>
+    <string name="str_fasting_days_missed">Antal missade fastedagar</string>
+    <string name="str_points_1">Poäng</string>
+    <string name="str_achievement_points">Prestationspoäng</string>
+    <string name="str_current_body_stats">Aktuella\nkropp\nsvärden</string>
+    <string name="str_diet_cycle_history_1">Diet\ncykel\nhistorik.</string>
+    <string name="str_achievements">Presta\ntioner</string>
+    <string name="str_share">Dela</string>
+
+    <!-- diet cycle history -->
+    <string name="str_diet_cycle_history_2">Diet cykel historik</string>
+    <string name="str_diet_time">diet tid</string>
+
+    <!-- Consumed Today Activity -->
+    <string name="str_consumed_today">förbrukat Idag</string>
+    <string name="str_free_value">fritt\nvärde</string>
+    <string name="str_from_menu">från\nmenyn</string>
+    <string name="str_info">Det är inte nödvändig att lista konsumerade produkter på vanliga dagar men du kan göra det om du vill.</string>
+    <string name="str_select">Välj</string>
+    <string name="str_no_more_calories_left">Du har inga kalorier kvar</string>
+    <string name="str_miss_goal">Om du lägger till dessa kalorier så har du missat ditt dagsmål. Vill du lägga till dom?</string>
+    <string name="str_use">Använd\t</string>
+    <string name="str_add_item">\tför att lägga till kalorier som du vill konsumer på din meny</string>
+    <string name="str_remove_1">Är du säker på att du vill ta bort</string>
+    <string name="str_remove_2">från cunsumed objekt?</string>
+
+    <!-- Contact US Activity -->
+    <string name="str_contact_us">Kontakta oss</string>
+    <string name="str_title_1">Title *</string>
+    <string name="str_email_1">Email *</string>
+    <string name="str_request_message">Du kan skriva din fråga eller feed-back här.</string>
+    <string name="str_request_message_1">Skicka din meddelande.</string>
+    <string name="str_sending_message">Sänder&#8230;</string>
+
+    <!-- Achievements Activity -->
+    <string name="str_achievements_1">Prestationer</string>
+    <string name="str_join">Kom till oss!</string>
+    <string name="str_visited">Du har besökt Stockholm App Lab</string>
+    <string name="str_points">Poäng:</string>
+    <string name="str_complete">Fullständig:</string>
+    <string name="str_fasting_day">Fastedag</string>
+    <string name="str_you_have_done">Du har fullgjort en fastedag.</string>
+    <string name="str_use_app">Använd appen 7 dagar i rad</string>
+    <string name="str_One">En, två&#8230;sju?</string>
+    <string name="str_become">Slutför en fasta</string>
+    <string name="str_comoplete_diet_cycle">Slutför en fasta</string>
+    <string name="str_achievement_2">Du har besökt Stockholm App Labs hemsida</string>
+    <string name="str_achievement_3">Du har fullgjort en fastedag!</string>
+    <string name="str_achievement_4">Du har slutfört en fasta!</string>
+    <string name="str_achievement_5">Mer</string>
+    <string name="str_achievement_6">Använd appen 7 dagar i rad.</string>
+
+    <!-- Body Stats Activity -->
+    <string name="str_graph">Graf</string>
+    <string name="str_kcal_1">KCAL</string>
+    <string name="str_kcal_2">Kcal</string>
+    <string name="str_wei">WEI</string>
+    <string name="str_weight">Vikt</string>
+    <string name="str_wai">WAI</string>
+    <string name="str_waist">Midja</string>
+    <string name="str_cho">CHO</string>
+    <string name="str_cholesterol">Kolesterol</string>
+    <string name="str_tri">TRI</string>
+    <string name="str_triglycerids">Triglycerider</string>
+    <string name="str_glu">GLU</string>
+    <string name="str_glucose">Glukos</string>
+    <string name="str_igf">IGF</string>
+    <string name="str_igf_1">IGF-1</string>
+    <string name="str_set_goal_text ">Du kan ställa in ditt målvärde för din kroppsstatistik.</string>
+    <string name="str_goal">Sätt mål</string>
+    <string name="press">Tryck här för att ställa in aktuellt värde.</string>
+
+    <!-- Quick Action Setting Dialogs -->
+    <string name="str_start_message_1">Använd \"Start\" knappen för att börja din diet.</string>
+    <string name="str_start_message_2">Besök oss - tar dig till vår Facebook sida \nKontakta oss - du kan sända email med frågor eller åsikter.</string>
+    <string name="str_start_message_3">Glöm inte lägga till din kroppsstatistik för idag.</string>
+    <string name="str_start_message_4">Dra slidern för att välja antal veckor du vill fasta</string>
+    <string name="str_start_message_5">Välj intensitet på din fasta och välj fastedagar.</string>
+    <string name="str_start_message_6">Välj det antal kalorier du ska konsumera på dina fastedagar.</string>
+    <string name="str_start_message_7">Lägg till produkter på din kalorilista</string>
+    <string name="str_start_message_8">Nu har du gjort alla inställningar och kan börja din diet.</string>
+    <string name="str_start_message_9">Du kan inte ha två fastedagar i rad. Det måste vara en dag mellan dem. Du kan ändra dina fastedagar när du har börjat din diet.</string>
+    <string name="str_start_message_10">Se över din kroppsstatistik och lägg in din a värden.</string>
+    <string name="str_start_message_11">Du kan se din dietcykel historik, lägga in kroppsstatistik och titta på grafer.</string>
+    <string name="str_start_message_12">Tryck på datumen för att öppna stänga din dietcykel historia</string>
+    <string name="str_start_message_13">Se din kroppsstatistikgraf</string>
+    <string name="str_start_message_14">Total tid kvar på din fasta.</string>
+    <string name="str_start_message_15">Det här är listan med produkter du konsumerat under dagen. Du kan lägga till eller ta bort produkter under dagen.</string>
+    <string name="str_start_message_16">Du kan när som helst ändra fastedagar.</string>
+    <string name="str_start_message_17">Du kan följa din kalorikonsumption och din statistik genom att trycka på den här knappen.</string>
+    <string name="str_start_message_18">Om du vill ändar några inställningar eller påbörja en annan diet så måste du avsluta din pågående diet.</string>
+    <string name="str_start_message_19">\"Påminn mig senare\" Kommer att påminna dig om två timmar.</string>
+    <string name="str_start_message_20">Klicka på grafen om du vill ändra eller lägga in Kroppsstatistik.</string>
+    <string name="str_start_message_21">Se ett annat kroppsvärde.</string>
+    <string name="str_start_message_22">Du kan ställa in ditt målvärde för din kroppsstatistik.</string>
+    <string name="str_hide_hints">Dölj tips</string>
+    <string name="str_join_1">Kom</string>
+    <string name="crash">App kraschade. Välj e-appen och skicka loggarna, vänligen</string>
+
+    <!-- Database -->
+    <string name="category_none">Inget</string>
+    <string name="category_fruit">Frukt</string>
+    <string name="category_vegetables">Grönsaker</string>
+    <string name="category_rice_and_pasta">Ris och pasta</string>
+    <string name="category_eggs">Ägg</string>
+    <string name="category_drinks">Drycker</string>
+    <string name="category_meat">Kött</string>
+    <string name="category_red_meat">Rött kött</string>
+    <string name="category_white_meat">Vitt kött</string>
+    <string name="category_fish">Fish</string>
+    <string name="category_seafood">Skaldjur</string>
+    <string name="category_chicken">Kyckling</string>
+    <string name="category_soup">Soup</string>
+    <string name="category_baking">Bakning</string>
+    <string name="category_hot_drinks">Varma Drycker</string>
+    <string name="category_alcohol_drinks">Alkohol drycker</string>
+    <string name="category_ingredients">Ingredienser</string>
+    <string name="category_cheese">Ost</string>
+    <string name="category_herbs_and_spices">Örter och kryddor</string>
+    <string name="category_nuts">Nötter</string>
+    <string name="category_other">Övrigt</string>
+    <string name="category_oils_and_fat">Oljor Och Fett</string>
+    <string name="category_sweetings">Sweetings</string>
+    <string name="category_smoothies">Smoothies</string>
+    <string name="category_salad">Sallad</string>
+    <string name="subcategory_none">Inget</string>
+    <string name="subcategory_breakfast">Frukost</string>
+    <string name="subcategory_lunch">Lunch</string>
+    <string name="subcategory_dinner">Middag</string>
+    <string name="subcategory_supper">Kvällsmål</string>
+    <string name="subcategory_snack">Snack</string>
+    <string name="subcategory_starters">Förrätter</string>
+    <string name="subcategory_desserts">Efterrätter</string>
+    <string name="subcategory_holidays">Helgdagar</string>
+    <string name="subcategory_salad">Salad</string>
+    <string name="subcategory_sides">Sides</string>
+
+    <!-- Measurements -->
+    <string name="measurement_tsp">tesked</string>
+    <string name="measurement_tbsp">matsked</string>
+    <string name="measurement_fl_oz">fluid ounce</string>
+    <string name="measurement_gill">gill (om &#189; kopp)</string>
+    <string name="measurement_pint">pint</string>
+    <string name="measurement_quart">quart</string>
+    <string name="measurement_gal">gal</string>
+    <string name="measurement_ml">ml</string>
+    <string name="measurement_l">l (liter)</string>
+    <string name="measurement_dl">dl</string>
+    <string name="measurement_lb">lb</string>
+    <string name="measurement_oz">oz</string>
+    <string name="measurement_mcg">mcg</string>
+    <string name="measurement_mg">mg</string>
+    <string name="measurement_g">g</string>
+    <string name="measurement_kg">kg</string>
+    <string name="measurement_mm">mm</string>
+    <string name="measurement_cm">cm</string>
+    <string name="measurement_m">m</string>
+    <string name="measurement_in">in</string>
+    <string name="str_facebook_share_message_3">Ladda ner program från</string>
+    <string name="str_facebook_share_message_4">Ladda ner program från</string>
+    <string name="str_facebook_share_message_5">Nytt mål uppnås!!!</string>
+    <string name="str_facebook_share_message_6">Ett, två&#8230; sju?: Använd app för 7 dagar i rad.</string>
+    <string name="ptr_pull_to_refresh">Dra för att uppdatera</string>
+    <string name="ptr_release_to_refresh">Släpp för att uppdatera</string>
+    <string name="ptr_refreshing">Uppfriskande…</string>
+    <string name="ptr_last_updated">Uppdaterad: %1$s</string>
+    <string name="str_facebook_caption">Kolla in detta recept!</string>
+
+    <!-- Login Activity -->
+    <string name="str_main_title">Konto\nRegistrering</string>
+    <string name="str_facebook_title">Logga in med ditt Facebook-konto</string>
+    <string name="str_facebook">Logga in med Facebook</string>
+    <string name="str_credentials_title">eller med dina referenser</string>
+    <string name="str_credentials_enter">Ange referenser</string>
+    <string name="str_password_title">Har du glömt ditt lösenord?</string>
+    <string name="str_password">Återställ lösenord</string>
+    <string name="str_credentials">Logga in med referenser</string>
+    <string name="str_registration_title">eller registrera dig som ny användare</string>
+    <string name="str_registration">Enkel Registrering</string>
+    <string name="str_registration_complete">Komplett Registrering</string>
+    <string name="str_back">Tillbaka</string>
+    <string name="str_login_edittext_email_hint">email</string>
+    <string name="str_invalid_email">Användar post är inte giltig</string>
+    <string name="str_empty_password">Användarlösenordet är tomt</string>
+    <string name="str_login_edittext_password_hint">lösenord</string>
+    <string name="str_signing_in">Signing I&#8230;</string>
+
+    <!-- Home Activity -->
+    <string name="str_media">Media</string>
+    <string name="str_recipes">Recept</string>
+    <string name="str_header_kcal">Kcal</string>
+    <string name="str_header_rating">Betyg</string>
+    <string name="str_search">Sök</string>
+    <string name="str_clear">Sök</string>
+    <string name="str_language">Språk:</string>
+    <string name="str_sort">Sortera efter:</string>
+    <string name="str_categories">show\nkategorier</string>
+    <string name="str_favorites">Favoriter</string>
+    <string name="str_all">Alla</string>
+    <string name="str_lang_en">Engelska</string>
+    <string name="str_lang_sv">Svenska</string>
+    <string name="str_lang_no">Norska</string>
+    <string name="str_sort_latest">Senaste</string>
+    <string name="str_sort_rating">Betyg</string>
+    <string name="str_sort_title">Titel</string>
+    <string name="str_sort_kcal">Kcal</string>
+    <string name="str_filter_pending">Endast väntar</string>
+    <string name="str_filter_rejected">Endast rejected</string>
+    <string name="str_filter_approved">Endast godkänd</string>
+    <string name="str_no_recipes">Inga resultat hittades. Kontrollera dina "avancerad sökning" inställningar. \nDu kan skapa egna recept genom att klicka på "+" knappen</string>
+    <string name="str_refresh">refresh</string>
+    <string name="str_refreshing">uppfriskande&#8230;</string>
+    <string name="str_filter">filtrering</string>
+
+    <!-- Advances Search Activity -->
+    <string name="str_adv_search">avancerad sökning</string>
+    <string name="str_adv_search_title">Avancerad Sökning</string>
+    <string name="str_search_btn">sök</string>
+    <string name="str_recipe_category">Recept kategori</string>
+    <string name="str_recipe_type">Recept typ</string>
+    <string name="str_calorie_limit">Kalori gräns</string>
+
+    <!-- Recipe Details Activity -->
+    <string name="str_ingredients">Ingredienser</string>
+    <string name="str_screenshots">Skärmbilder</string>
+    <string name="str_author">Författare:</string>
+    <string name="str_rate_directions">Tryck på stjärnorna för att betygsätta</string>
+    <string name="str_rate_directions_dialog">Tryck på stjärnorna för att betygsätta.</string>
+    <string name="str_rate_title">Rate Recept</string>
+    <string name="str_rate">Betyg</string>
+    <string name="str_list_expand">Visa hela listan</string>
+    <string name="str_reject">förkasta</string>
+    <string name="str_approve">godkänna</string>
+    <string name="review_approved_success">Recept godkändes</string>
+    <string name="review_rejected_success">Recept avslogs</string>
+    <string name="str_reject_title">Avvisa Recept</string>
+    <string name="str_reject_msg">Är du säker på att du vill avvisa receptet? Sätt avslag skäl nedan.</string>
+    <string name="str_reject_edittxt">Avvisande anledning</string>
+    <string name="str_reject_btn">Avvisa</string>
+    <string name="review_approved_empty">Feedback budskap är tom</string>
+    <string name="str_approve_title">Godkännande Recept</string>
+    <string name="str_approve_msg">Är du säker på att du vill godkänna detta recept? Detta recept kommer att visas för andra användare efter din bekräftelse.</string>
+    <string name="str_approve_btn">Godkänn</string>
+    <string name="str_rating_1">Betyg</string>
+    <string name="str_rating_2">röster</string>
+
+    <!-- Add Recipe Activity -->
+    <string name="str_step1">Steg 1</string>
+    <string name="str_step2">Steg 2</string>
+    <string name="str_step3">Steg 3</string>
+    <string name="str_step4">Steg 4</string>
+    <string name="str_enter_title_edittxt_hint">Recept titel *</string>
+    <string name="str_enter_title">Ange recept titel</string>
+    <string name="str_enter_title_hint">Denna titel kommer att synas i receptlistan.\nAndra användare kommer att kunna söka efter titeln.</string>
+    <string name="str_sign_title">Välj din signatur</string>
+    <string name="str_sign_hint">Om e-post är synlig då alla användare kan skriva ett mail till dig.</string>
+    <string name="str_screenshots_title">Lägg receptbilder</string>
+    <string name="str_screenshots_btn">Klicka för att lägga till</string>
+    <string name="str_add">lägg</string>
+    <string name="str_sign_btn1">E-post och namn</string>
+    <string name="str_sign_btn2">Namn</string>
+    <string name="str_sign_btn3">Anonym</string>
+    <string name="str_swipe_hint">Svep skärmen för att växla mellan stegen</string>
+    <string name="str_photo_txt">Klicka för att lägga till</string>
+    <string name="str_error_photos_empty">Lägg till minst 1 bild</string>
+    <string name="str_error_photos_size">Du kan lägga till endast 5 foton</string>
+    <string name="str_error_title_empty">Titel är tom</string>
+    <string name="str_error_signature_empty">Vänligen, välj din signatur</string>
+    <string name="str_error_category_empty">Vänligen, välj nedan</string>
+    <string name="str_error_type_empty">Vänligen, välj typ</string>
+    <string name="str_error_time_empty">Vänligen, välj tillagningstid</string>
+    <string name="str_error_photos">Fel, kan inte lägga till bild</string>
+    <string name="str_error_remove">Fel, kan inte ta bort foto</string>
+    <string name="str_category_title">Välj recept kategori</string>
+    <string name="str_category_hint">Välj mest relevanta kategorin.</string>
+    <string name="str_type_title">Välj recept typ</string>
+    <string name="str_type_hint">Välj mest relevanta typen av ditt recept. Mestadels det är relaterat till att äta tid som middag eller lunch.</string>
+    <string name="str_time_title">Välj tillagningstid</string>
+    <string name="str_time_hint">Ange antal minuter och timmar din maträtt behöver kompletteras.</string>
+    <string name="str_dialog_continue_title">Fortsätt sista recept skapelsen?</string>
+    <string name="str_dialog_continue_message">Du har osparade recept, vill du fortsätta sin skapande process? Om du startar från scratch gammalt recept kommer att gå förlorade.</string>
+    <string name="str_dialog_continue_btn_new">Ny</string>
+    <string name="str_dialog_continue_btn_continue">Fortsätt</string>
+    <string name="str_metrics_us">US</string>
+    <string name="str_metrics_eu">EU</string>
+    <string name="str_add_ingredients_title">Lägg ingredienser</string>
+    <string name="str_metrics_hint">Välj mätnings metrics.</string>
+    <string name="str_ingredient_title">Ingrediens titel</string>
+    <string name="str_calculate_checkbox">beräkna totala kalorivärdet från ingredienser</string>
+    <string name="str_total_kcal_title">Totalt KCal värde</string>
+    <string name="str_guide_title">Lägg matlagning guide</string>
+    <string name="str_guide_hint">Lägg säljs hur laga detta recept.</string>
+    <string name="str_ingredient_hint">Tryck här eller på  ”+” för att lägga till fler ingredienser.</string>
+    <string name="str_add_ingredient">Lägg ingrediens till aktuella recept</string>
+    <string name="str_no_ingredients">Använd ”+” att lägga till nya objekt.</string>
+    <string name="str_delete">Radera</string>
+    <string name="str_add_photo_error">Kan inte lägga till bild</string>
+    <string name="str_add_photo_count_error">För många bilder</string>
+    <string name="str_add_gallery">Välj Från Galleri</string>
+    <string name="str_add_camera">Ta bild</string>
+    <string name="str_group_volume">Volym</string>
+    <string name="str_group_weight">Vikt</string>
+    <string name="str_group_length">Längd</string>
+
+    <string-array name="filter_array">
+        <item>Väntar</item>
+        <item>Tillbakavisad</item>
+        <item>Godkänd</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>Alla</item>
+        <item>Engelska</item>
+        <item>Svenska</item>
+    </string-array>
+    <string-array name="sort_array">
+        <item>Senaste</item>
+        <item>Betyg</item>
+        <item>Titel</item>
+        <item>Kcal</item>
+    </string-array>
+    <string-array name="ingredient_sort_array">
+        <item>Titel</item>
+        <item>Kcal</item>
+    </string-array>
+
+    <!-- Edit Ingredient Activity -->
+    <string name="str_edit_title">Ange recept ingrediens titel</string>
+    <string name="str_edit_title_hint">Detta är titeln på din kost objekt, t.ex. Socker, salt eller mjölk.</string>
+    <string name="str_edit_measurment_title">Välj kost objektet mätning</string>
+    <string name="str_edit_kcal_title">Kalori värde per enhet*</string>
+    <string name="str_edit_per_init_subtitle">Per enhet:</string>
+    <string name="str_edit_per_init_txt">i varje</string>
+    <string name="str_edit_quantity">Välj objektet kvantitet</string>
+    <string name="str_edit_total_subtitle">Totalt:</string>
+    <string name="str_edit_total_txt">i</string>
+    <string name="str_edit_total_na">n/a</string>
+    <string name="str_edit_create_btn">skapa objektet</string>
+    <string name="str_edit_save_checkbox">Spara till kalori meny</string>
+    <string name="str_title_edittxt_hint">Recept ingrediens titel *</string>
+    <string name="str_info_dialog_title">Info</string>
+    <string name="str_info_dialog_txt">"Kalori per enhet "betyder nummer om kalorier som förbrukas för varje enhetsvärde. T.ex per 100 ml, 100 g, 1 tps etc.</string>
+    <string name="str_clear_dialog_title">Rensa Alla</string>
+    <string name="str_clear_dialog_txt">Vill du radera alla fält?</string>
+    <string name="str_new_dialog_title">Import Nytt objekt&#8230;</string>
+    <string name="str_new_dialog_txt">Vill du importera en annan ingrediens?</string>
+    <string name="str_measurement_dialog_txt">Mätvärde är inte inställd.</string>
+    <string name="str_new_ingredient">&lt;Ny Ingrediens&gt;</string>
+    <string name="str_calorie_dialog_title">Anmälan</string>
+    <string name="str_calorie_dialog_txt">Om "Spara" alternativet inte är markerat så ny ingrediens inte sparas på din kalori menyn som ny, men den kommer att fortfarande läggs till ditt recept.</string>
+
+    <!-- Settings Screen Activity -->
+    <string name="str_logout">Logga ut</string>
+    <string name="str_update">Uppdatera kontoinformation</string>
+    <string name="str_purchase">Köp Premium-konto</string>
+
+    <!-- Dialog Texts -->
+    <string name="str_dialog_27">Åter</string>
+    <string name="str_dialog_28">Lösenord Återställa</string>
+    <string name="str_dialog_29">Fyll i din e-post till vidare lösenordsåterställningsprocessen. Nytt lösenord kommer att skickas till angivna e.</string>
+
+    <!-- diet cycle history -->
+    <string name="str_no_history_found">Ingen historik hittas. \n \n Starta ny diet cykel för att spåra din \nbody statistik och andra värden.</string>
+
+    <!-- Join Dialog -->
+    <string name="str_email_hint">Email</string>
+    <string name="str_joien_title">FREE 5: 2 Hälsa Kost Medlemskap</string>
+    <string name="str_joien_message">Få din gratis varje vecka 5:2 recept och hälsotips \nLägg din e-postadress:</string>
+
+    <string-array name="food_item_name">
+        <item>Apelsin</item>
+        <item>Banan</item>
+        <item>Blåbär</item>
+        <item>Citron</item>
+        <item>Grapefrukt</item>
+        <item>Hallon</item>
+        <item>Hallon frysta</item>
+        <item>Jordgubbar</item>
+        <item>Jordgubbar frysta</item>
+        <item>Äpple</item>
+        <item>Blomkål</item>
+        <item>Broccoli</item>
+        <item>Champinjoner</item>
+        <item>Gurka</item>
+        <item>Isbergssallad</item>
+        <item>Kantareller</item>
+        <item>Morot</item>
+        <item>Paprika röd</item>
+        <item>Paprika grön</item>
+        <item>Paprika gul</item>
+        <item>Rädisa</item>
+        <item>Tomat</item>
+        <item>Vitkål</item>
+        <item>Sparris grön/vit</item>
+        <item>Spenat</item>
+        <item>Spenat fryst</item>
+        <item>Potatis kokt</item>
+        <item>Vildris</item>
+        <item>Råris kokt</item>
+        <item>Snabbris kokt</item>
+        <item>Pasta makaroner/spaghetti</item>
+        <item>Pasta makaroner/spaghetti fullkorn</item>
+        <item>Ägg rått el kokt</item>
+        <item>Ägg stekt</item>
+        <item>Kaffe</item>
+        <item>Kaffe m mjölk</item>
+        <item>Te</item>
+        <item>The m mjölk</item>
+        <item>Lingondricka</item>
+        <item>Lättmjölk</item>
+        <item>Mellanmjölk</item>
+        <item>Nyponte</item>
+        <item>Soja dryck</item>
+        <item>Havredryck Oatly</item>
+        <item>Kycklingfile</item>
+        <item>Kycklinglår</item>
+        <item>kycklingvinge</item>
+        <item>Kycklingbröst</item>
+        <item>kyckling grillad m skinn</item>
+        <item>Kalkon</item>
+        <item>Grillat fläskkött</item>
+        <item>Köttfärs nöt</item>
+        <item>Fläskfile</item>
+        <item>Fläskkotlett</item>
+        <item>Färsk tonfisk</item>
+        <item>Tonfisk i olja</item>
+        <item>Tonfisk i vatten</item>
+        <item>Räkor</item>
+        <item>Abborre</item>
+        <item>Gös</item>
+        <item>Hummer</item>
+        <item>Hällflundra</item>
+        <item>Kolja</item>
+        <item>Kummel</item>
+        <item>Lax gravad</item>
+        <item>Ostron</item>
+        <item>Musslor</item>
+        <item>Rödspetta</item>
+        <item>Torsk</item>
+    </string-array>
+
+    <string name="str_remind_me_later">Påminn mig senare</string>
+    <string name="str_error_description">Matlagning guide är tom</string>
+    <string name="str_error_ingredients_empty">Inga ingredienser sattes</string>
+    <string name="str_dialog_autocalculation_title">Varning</string>
+    <string name="str_dialog_autocalculation_msg">Vill du inaktivera totala kalorivärdet autocalculation?</string>
+    <string name="str_title_dialog_txt">Titel är tom.</string>
+    <string name="str_measurement_type_dialog_txt">Mätning typ är inte inställd.</string>
+    <string name="str_dialog_convertion_title">Value Konvertering</string>
+    <string name="str_dialog_convertion_txt">Vill du konvertera kalorivärde för mätning från \'%1$s\" till \"%2$s\'? Om du avbryter denna begäran måste du ange kalorivärdet manuellt.</string>
+    <string name="str_dialog_convertion_current">Hålla aktuell</string>
+    <string name="str_dialog_convertion_convert">Konvertera</string>
+    <string name="str_dialog_convertion_error_txt">Kalorivärdet kan inte konverteras från \'%1$s\" till \"%2$s\". Vill du behålla aktuellt värde?</string>
+    <string name="str_dialog_convertion_zero">Sätt till 0</string>
+    <string name="str_dialog_exist_title">Objekt finns redan</string>
+    <string name="str_dialog_exist_txt">Denna punkt har redan lagts till på listan. Vill du redigera den?</string>
+
+    <!-- Settings Screen Activity -->
+    <string name="str_btn_signout">logga ut</string>
+    <string name="str_btn_signin">logga in</string>
+    <string name="str_btn_create">skapa</string>
+    <string name="str_btn_restore">återställa</string>
+    <string name="str_btn_reset">återställ</string>
+    <string name="str_never">Aldrig</string>
+
+    <string-array name="array_settings_sections">
+        <item>Påminnelser</item>
+        <item>Användarprofil</item>
+        <item>Tillämpning</item>
+        <item>Hjälp Dialogrutor</item>
+    </string-array>
+    <string-array name="array_settings_section_1">
+        <item>Push-meddelanden</item>
+    </string-array>
+    <string-array name="array_settings_section_2">
+        <item>Morgon påminnelse: tid när du kommer att meddelas om din kost cykelstatus</item>
+        <item>Kväll påminnelse: tid när du kommer att meddelas om att nästa dag kommer att vara fastande</item>
+    </string-array>
+    <string-array name="array_settings_section_3">
+        <item>Facebook</item>
+        <item>Ingen användare är inloggad</item>
+    </string-array>
+    <string-array name="array_settings_section_4">
+        <item>Senast backup info</item>
+        <item>Gör ny backup</item>
+        <item>Återställa från säkerhetskopia</item>
+    </string-array>
+    <string-array name="array_settings_section_5">
+        <item>Nuvarande version</item>
+        <item>Programuppdatering</item>
+    </string-array>
+    <string-array name="array_settings_section_6">
+        <item>Hjälp dialoger är inaktiva</item>
+        <item>Återställ antydningar</item>
+    </string-array>
+
+    <string name="str_contact_send_error">Fel kan inte posta feedback</string>
+
+    <!-- Media -->
+    <string name="str_twitter">Twitter</string>
+    <string name="str_media_facebook">Facebook</string>
+    <string name="str_web">Web Site</string>
+    <string name="str_google">Google+</string>
+    <string name="str_more">Fler applikationer</string>
+    <string name="str_contact">Kontakta oss</string>
+
+    <!-- Summary -->
+    <string name="str_summary_editing">börja redigera</string>
+    <string name="str_summary_finish_editing">avsluta redigering</string>
+    <string name="str_summary_submit">förelägga granska</string>
+    <string name="str_summary_terms_title">Förelägga Granska</string>
+    <string name="str_summary_terms_txt">Jag är medveten om att genom att publicera ett recept jag är ansvarig för det som en helhet. Det enda du får komma in är uppriktiga recept av ätbar och drickbar mat och dryck. Brott mot denna regel kommer att förbjuda dig från app. Bild är mätningar och text mitt ansvar och bör vara klar och gjort det bästa av din kunskap. Jag är medveten om att jag inte är tillåtet att göra stötande material och om jag gör jag kommer att förbjudas från app. Alla bidrag ses innan publicering och kan avvisas utan någon förklaring. Att jag kan bara använda mina egna bilder och att jag är ansvarig för någon in material. Det material som används kan användas av utgivaren av denna app på något sätt de vill och jag kan inte göra anspråk på någon ersättning i någon form för det. Alla Apples regler följer också.</string>
+    <string name="str_summary_edit">redigera</string>
+
+</resources>

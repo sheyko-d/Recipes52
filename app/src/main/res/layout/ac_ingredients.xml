@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <com.stockholmapplab.recipes.typeface.CustomTextView
+        android:id="@+id/ingredientsTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cream"
+        android:gravity="center"
+        android:padding="@dimen/ingredients_title_txt_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ingredients_title_txt_size"
+        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+    <ListView
+        android:id="@+id/ingredientsListLarge"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredientsTitleTxt"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>

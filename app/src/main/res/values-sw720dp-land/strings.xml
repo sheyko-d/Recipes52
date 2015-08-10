@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- My Stats Activity -->
+    <string name="str_current_body_stats">Current\nBody Stats</string>
+    <string name="str_diet_cycle_history_1">Diet Cycle\nHistory</string>
+    <string name="str_achievements">Achievements</string>
+
+</resources>

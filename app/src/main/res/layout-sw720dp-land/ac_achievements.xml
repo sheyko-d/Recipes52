@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/sc_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_imgScale"
+        android:layout_below="@+id/view" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_relativeAchievements2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_imgEntered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_entered"
+                    android:contentDescription="@string/app_name"
+                    android:paddingTop="@dimen/achievement_padding_top" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_relativeAchievements3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_imgEntered" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txtJoinOurParty"
+                        style="@style/style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/str_join"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_visited"
+                        style="@style/style22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txtJoinOurParty"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/str_visited"
+                        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_points1"
+                        style="@style/style21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_visited"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+                </RelativeLayout>
+
+                <com.stockholmapplab.recipes.verticalprogressbar.VerticalProgressBar
+                    android:id="@+id/pb_verticalProgressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_fill" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relativeAchievements4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relativeAchievements2"
+                android:background="@drawable/ic_green_transparent_patch"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/achievement_padding_bottom"
+                android:paddingTop="@dimen/achievement_padding_top" >
+
+                <ImageView
+                    android:id="@+id/iv_imgFasting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_fasting"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_relativeAchievements5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_imgFasting" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txtFastingDay"
+                        style="@style/style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/str_fasting_day"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_done"
+                        style="@style/style22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txtFastingDay"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/str_you_have_done"
+                        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_point2"
+                        style="@style/style21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_done"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+                </RelativeLayout>
+
+                <com.stockholmapplab.recipes.verticalprogressbar.VerticalProgressBar
+                    android:id="@+id/pb_verticalProgressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_fill" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relativeAchievements6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relativeAchievements4"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/achievement_padding_bottom"
+                android:paddingTop="@dimen/achievement_padding_top" >
+
+                <ImageView
+                    android:id="@+id/iv_imgWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ic_week"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_relativeAchievements7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_imgWeek" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_one"
+                        style="@style/style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/str_One"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_use_app"
+                        style="@style/style22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_one"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/str_use_app"
+                        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_point3"
+                        style="@style/style21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_use_app"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+                </RelativeLayout>
+
+                <com.stockholmapplab.recipes.verticalprogressbar.VerticalProgressBar
+                    android:id="@+id/pb_verticalProgressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_fill" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_relativeAchievements8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_relativeAchievements6"
+                android:background="@drawable/ic_green_transparent_patch"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/achievement_padding_bottom"
+                android:paddingTop="@dimen/achievement_padding_top" >
+
+                <ImageView
+                    android:id="@+id/iv_img_diet_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_diet_goal"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_relativeAchievements9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_img_diet_goal" >
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_become"
+                        style="@style/style3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/str_become"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_complete"
+                        style="@style/style22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_become"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/str_comoplete_diet_cycle"
+                        slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+                    <com.stockholmapplab.recipes.typeface.CustomTextView
+                        android:id="@+id/tv_txt_point4"
+                        style="@style/style21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_txt_complete"
+                        slk:typeface="font/ClementePDam-Bold.otf" />
+                </RelativeLayout>
+
+                <com.stockholmapplab.recipes.verticalprogressbar.VerticalProgressBar
+                    android:id="@+id/pb_verticalProgressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_fill" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_imgScale"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_footer" />
+
+</RelativeLayout>

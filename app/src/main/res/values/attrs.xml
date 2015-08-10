@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Slk">
+        <attr name="typeface" format="string" />
+        <attr name="message" format="string|reference" />
+        <attr name="messageColor" format="color" />
+        <attr name="messageTypeface" format="string" />
+    </declare-styleable>
+
+</resources>

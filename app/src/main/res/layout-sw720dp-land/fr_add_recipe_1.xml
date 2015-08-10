@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:text="@string/str_enter_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/add_title_txt_size"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/add_margin"
+            android:layout_marginTop="@dimen/add_margin"
+            android:drawableLeft="@drawable/ic_bulb"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4dp"
+            android:paddingLeft="@dimen/add_hint_padding"
+            android:paddingRight="@dimen/add_hint_padding"
+            android:paddingTop="4dp"
+            android:text="@string/str_enter_title_hint"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/add_hint_txt_size"
+            slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/addTitleEdittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/add_margin_large"
+            android:layout_marginRight="@dimen/add_margin_large"
+            android:background="@drawable/ic_time_patch"
+            android:hint="@string/str_enter_title_edittxt_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/light_gray"
+            android:textSize="30sp"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addTitleEdittxt"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/add_margin"
+            android:text="@string/str_sign_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/add_title_txt_size"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView01"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_bulb"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4dp"
+            android:paddingLeft="@dimen/add_hint_padding"
+            android:paddingRight="@dimen/add_hint_padding"
+            android:paddingTop="4dp"
+            android:text="@string/str_sign_hint"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/add_hint_txt_size"
+            slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/add_margin"
+            android:layout_marginLeft="@dimen/add_margin_btns"
+            android:layout_marginRight="@dimen/add_margin_btns"
+            android:layout_marginTop="@dimen/add_margin" >
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/button1"
+                style="BorderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="5"
+                android:background="@drawable/add_btn_1_selector"
+                android:shadowColor="@android:color/black"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="@string/str_sign_btn1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/add_btns_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/button2"
+                style="BorderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="2"
+                android:background="@drawable/add_btn_2_selector"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="@string/str_sign_btn2"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/add_btns_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/button3"
+                style="BorderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_btn_3_selector"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="@string/str_sign_btn3"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/add_btns_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+        </LinearLayout>
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/add_margin"
+            android:layout_marginRight="@dimen/add_margin"
+            android:text="@string/str_screenshots_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/add_title_txt_size"
+            slk:typeface="font/ClementePDam-Bold.otf" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView03"
+            android:layout_marginBottom="@dimen/add_margin"
+            android:layout_marginTop="@dimen/add_margin"
+            android:background="@color/list_green_dark" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/photoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/add_photo_margin"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <com.stockholmapplab.recipes.typeface.CustomTextView
+                    android:id="@+id/addPhoto"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="@dimen/add_photo_margin"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginRight="@dimen/add_photo_margin"
+                    android:layout_marginTop="@dimen/add_photo_margin"
+                    android:background="@drawable/photo_placeholder_patch"
+                    android:gravity="center"
+                    android:text="@string/str_photo_txt"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/add_photo_txt_size"
+                    slk:typeface="font/ClementePDal-SemiBoldItalic.otf" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalScrollView"
+            android:layout_centerHorizontal="true" >
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/editPhoto"
+                style="BorderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/add_margin"
+                android:background="@drawable/button_selector"
+                android:text="@string/str_edit"
+                android:textSize="@dimen/add_btns_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/addButton"
+                style="BorderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:onClick="add"
+                android:text="@string/str_add"
+                android:textSize="@dimen/add_btns_size"
+                slk:typeface="font/ClementePDam-Bold.otf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

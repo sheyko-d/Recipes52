@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal" >
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/searchEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/login_margin_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/ic_time_patch_small"
+            android:hint="@string/str_search"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/recipes_searchtext_size"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/recipes_header_item_padding_vertical"
+            android:paddingLeft="@dimen/recipes_header_item_padding_horizontal"
+            android:paddingRight="@dimen/recipes_header_item_padding_horizontal"
+            android:paddingTop="@dimen/recipes_header_item_padding_vertical" >
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:id="@+id/recipesHeaderTitleTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/recipes_item_margin"
+                android:paddingRight="@dimen/recipes_item_margin"
+                android:text="@string/str_sort_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/recipes_header_item_text_size"
+                slk:typeface="font/ClementePDai-Regular.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="@dimen/recipes_item_margin"
+                android:paddingRight="@dimen/recipes_item_margin"
+                android:text="@string/str_header_kcal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/recipes_header_item_text_size_small"
+                slk:typeface="font/ClementePDai-Regular.otf" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/chooseIngredientList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ffffffff"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

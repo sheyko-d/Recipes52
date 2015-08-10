@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_food_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <com.stockholmapplab.recipes.typeface.CustomEditText
+                android:id="@+id/et_edtKCal"
+                style="@style/style5"
+                android:layout_width="@dimen/calory_menu_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_cals_btn"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="8dp"
+                android:singleLine="true"
+                slk:typeface="font/ClementePDak-SemiBold.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/bt_btnSelect"
+                style="@style/style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et_edtKCal"
+                android:background="@drawable/button_selector"
+                android:padding="8dp"
+                android:text="@string/str_select"
+                android:textColor="@drawable/ac_white_color_selector"
+                android:visibility="gone"
+                slk:typeface="font/ClementePDao-Heavy.otf" />
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/bt_btnRemove"
+                style="@style/style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_selector"
+                android:padding="8dp"
+                android:text="@string/str_remove"
+                android:textColor="@drawable/ac_white_color_selector"
+                android:visibility="invisible"
+                slk:typeface="font/ClementePDao-Heavy.otf" />
+        </RelativeLayout>
+
+        <com.stockholmapplab.recipes.typeface.CustomEditText
+            android:id="@+id/et_edtItem"
+            style="@style/style5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rl_right"
+            android:background="@drawable/ic_item_btn"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true"
+            slk:typeface="font/ClementePDak-SemiBold.otf" />
+    </RelativeLayout>
+
+</RelativeLayout>

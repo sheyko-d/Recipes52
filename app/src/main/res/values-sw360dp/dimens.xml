@@ -1,0 +1,16 @@
+<resources>
+    
+    <dimen name="logo_height">130dp</dimen>
+    <dimen name="logo_width">180dp</dimen>
+    <dimen name="home_facebook_size">36dp</dimen>
+    <dimen name="home_settings_size">38dp</dimen>
+    <dimen name="home_blue_icons_width">160dp</dimen>
+    <dimen name="home_margin_bottom">16dp</dimen>
+    <dimen name="ingredient_height">164dp</dimen>
+    <dimen name="home_txt_size">16sp</dimen>
+    <dimen name="add_margin_btns">24dp</dimen>
+    <dimen name="add_margin_large">32dp</dimen>
+    <dimen name="checkbox_margin">16dp</dimen>
+    <dimen name="ingredient_desc_txt_size">14sp</dimen>
+
+</resources>

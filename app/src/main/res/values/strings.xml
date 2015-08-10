@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_add_label">Make a recipe</string>
+    <!-- <string name="showcase_image_title">Look how cute it is!</string> -->
+    <string name="showcase_image_message">This is a lovely kitten.</string>
+    <string name="crash">App crashed. Choose email app and send logs, please</string>
+    <string name="action_add">Add</string>
+    <string name="action_lang">Language</string>
+    <string name="action_clear">Clear all fields</string>
+    <string name="action_new">New ingredient</string>
+
+    <!-- Database -->
+    <string name="category_none">None</string>
+    <string name="category_fruit">Fruit</string>
+    <string name="category_vegetables">Vegetables</string>
+    <string name="category_rice_and_pasta">Rice And Pasta</string>
+    <string name="category_eggs">Eggs</string>
+    <string name="category_drinks">Drinks</string>
+    <string name="category_meat">Meat</string>
+    <string name="category_red_meat">Red Meat</string>
+    <string name="category_white_meat">White Meat</string>
+    <string name="category_fish">Fish</string>
+    <string name="category_seafood">Seafood</string>
+    <string name="category_chicken">Chicken</string>
+    <string name="category_soup">Soup</string>
+    <string name="category_baking">Baking</string>
+    <string name="category_hot_drinks">Hot Drinks</string>
+    <string name="category_alcohol_drinks">Alcohol Drinks</string>
+    <string name="category_ingredients">Ingredients</string>
+    <string name="category_cheese">Cheese</string>
+    <string name="category_herbs_and_spices">Herbs And Spices</string>
+    <string name="category_nuts">Nuts</string>
+    <string name="category_other">Other</string>
+    <string name="category_oils_and_fat">Oils And Fat</string>
+    <string name="category_sweetings">Sweetings</string>
+    <string name="category_smoothies">Smoothies</string>
+    <string name="category_salad">Salad</string>
+    <string name="subcategory_none">None</string>
+    <string name="subcategory_breakfast">Breakfast</string>
+    <string name="subcategory_lunch">Lunch</string>
+    <string name="subcategory_dinner">Dinner</string>
+    <string name="subcategory_supper">Supper</string>
+    <string name="subcategory_snack">Snack</string>
+    <string name="subcategory_starters">Starters</string>
+    <string name="subcategory_desserts">Desserts</string>
+    <string name="subcategory_holidays">Holidays</string>
+    <string name="subcategory_salad">Salad</string>
+    <string name="subcategory_sides">Sides</string>
+
+    <!-- Measurements -->
+    <string name="measurement_tsp">teaspoon</string>
+    <string name="measurement_tbsp">tablespoon</string>
+    <string name="measurement_fl_oz">fluid ounce</string>
+    <string name="measurement_gill">gill (about &#189; cup)</string>
+    <string name="measurement_cup">cup</string>
+    <string name="measurement_pint">pint</string>
+    <string name="measurement_quart">quart</string>
+    <string name="measurement_gal">gal</string>
+    <string name="measurement_piece">piece</string>
+    <string name="measurement_ml">ml</string>
+    <string name="measurement_l">l (litre)</string>
+    <string name="measurement_dl">dl</string>
+    <string name="measurement_pinch">pinch</string>
+    <string name="measurement_lb">lb</string>
+    <string name="measurement_oz">oz</string>
+    <string name="measurement_mcg">mcg</string>
+    <string name="measurement_mg">mg</string>
+    <string name="measurement_g">g</string>
+    <string name="measurement_kg">kg</string>
+    <string name="measurement_mm">mm</string>
+    <string name="measurement_cm">cm</string>
+    <string name="measurement_m">m</string>
+    <string name="measurement_in">in</string>
+    <string name="app_name">5:2 Recipes</string>
+    <string name="app_id">506406952715872</string>
+    <string name="str_facebook_share_message_1">Welcome to 5:2 Recipes app</string>
+    <string name="str_facebook_share_message_2">It reminds me of my fasting days and I can in a very simple way enter the things I eat and keep track of that.</string>
+    <string name="str_facebook_share_message_3">Download application from</string>
+    <string name="str_facebook_share_message_4">Download application from</string>
+    <string name="str_facebook_share_message_5">New goal achieved!!!</string>
+    <string name="str_facebook_share_message_6">One, two&#8230; seven?: Use app for 7 days in a row.</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="str_facebook_caption">Check out this recipe!</string>
+
+    <!-- Splash Screen -->
+    <string name="str_loading">loading&#8230;</string>
+
+    <!-- Login Activity -->
+    <string name="str_main_title">Account\nRegistration</string>
+    <string name="str_facebook_title">Sign in with your Facebook account</string>
+    <string name="str_facebook">Sign in with Facebook</string>
+    <string name="str_credentials_title">or with your credentials</string>
+    <string name="str_credentials_enter">Enter your credentials</string>
+    <string name="str_password_title">Forgot your password?</string>
+    <string name="str_password">Restore Password</string>
+    <string name="str_credentials">Sign in with credentials</string>
+    <string name="str_registration_title">or register as new user</string>
+    <string name="str_registration">Simple Registration</string>
+    <string name="str_registration_complete">Complete Registration</string>
+    <string name="str_back">Back</string>
+    <string name="str_login_edittext_email_hint">email</string>
+    <string name="str_invalid_email">User email is not valid</string>
+    <string name="str_required_email">The email field is required</string>
+    <string name="str_empty_password">User password is empty</string>
+    <string name="str_login_edittext_password_hint">password</string>
+    <string name="str_signing_in">Signing In&#8230;</string>
+
+    <!-- Home Activity -->
+    <string name="str_start">Start</string>
+    <string name="str_myStats">My Stats</string>
+    <string name="str_media">Media</string>
+    <string name="str_recipes">Recipes</string>
+    <string name="str_calorie">Calorie Menu</string>
+    <string name="str_used_cal">used kcal:</string>
+    <string name="str_cal_left">kcal left:</string>
+    <string name="str_until_food">until food</string>
+    <string name="str_until_fasting">until fasting</string>
+    <string name="str_diet_setting">Diet Settings</string>
+    <string name="str_internet_connection">Can\'t connect to server. Please check your internet connection.</string>
+    <string name="use_cal">used kcal:</string>
+    <string name="cal_left">kcal left:</string>
+    <string name="str_wait">Wait&#8230;</string>
+    <string name="str_sent_request_successful">Request sent successfully</string>
+    <string name="str_sent_request_fail">Request sending fail</string>
+    <string name="str_dont_forget">Don\'t forget that tomorrow will be fasting day!</string>
+
+    <!-- Recipes Activity -->
+    <string-array name="calorie">
+        <item>&lt; 100</item>
+        <item>&lt; 200</item>
+        <item>&lt; 300</item>
+        <item>&lt; 400</item>
+        <item>&lt; 500</item>
+        <item>&lt; 600</item>
+        <item>&lt; 700</item>
+        <item>&lt; 800</item>
+        <item>&lt; 900</item>
+        <item>&lt; 1000</item>
+        <item>&lt; 1100</item>
+        <item>&lt; 1200</item>
+        <item>&lt; 1300</item>
+        <item>&lt; 1400</item>
+        <item>&lt; 1500</item>
+        <item>&lt; 1600</item>
+        <item>&lt; 1700</item>
+        <item>&lt; 1800</item>
+        <item>&lt; 1900</item>
+    </string-array>
+
+    <string name="str_header_kcal">Kcal</string>
+    <string name="str_header_rating">Rating</string>
+    <string name="str_search">Search</string>
+    <string name="str_clear">clear</string>
+    <string name="str_language">Language:</string>
+    <string name="str_sort">Sort by:</string>
+    <string name="str_categories">show\ncategories</string>
+    <string name="str_favorites">Favorites</string>
+    <string name="str_closing_title">Closing</string>
+    <string name="str_closing_msg">Are you sure you want to leave recipe creation? Unfinished recipe will be stored locally so you can edit it next time.</string>
+
+    <string-array name="filter_array">
+        <item>Pending</item>
+        <item>Rejected</item>
+        <item>Approved</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>All</item>
+        <item>English</item>
+        <item>Swedish</item>
+    </string-array>
+
+    <string name="str_all">All</string>
+    <string name="str_lang_en">English</string>
+    <string name="str_lang_sv">Swedish</string>
+
+    <string-array name="sort_array">
+        <item>Latest</item>
+        <item>Rating</item>
+        <item>Title</item>
+        <item>Kcal</item>
+    </string-array>
+    <string-array name="ingredient_sort_array">
+        <item>Title</item>
+        <item>Kcal</item>
+    </string-array>
+
+    <string name="str_sort_latest">Latest</string>
+    <string name="str_sort_rating">Rating</string>
+    <string name="str_sort_title">Title</string>
+    <string name="str_sort_kcal">Kcal</string>
+    <string name="str_filter_pending">Pending only</string>
+    <string name="str_filter_rejected">Rejected only</string>
+    <string name="str_filter_approved">Approved only</string>
+    <string name="str_no_recipes">No results found. Check your "advanced search" settings.\nYou can create your own recipes by clicking "+" button</string>
+    <string name="str_refresh">refresh</string>
+    <string name="str_refreshing">refreshing&#8230;</string>
+    <string name="str_filter">filter</string>
+
+    <!-- Advances Search Activity -->
+    <string name="str_adv_search">advanced search</string>
+    <string name="str_adv_search_title">Advanced Search</string>
+    <string name="str_search_btn">search</string>
+    <string name="str_recipe_category">Recipe category</string>
+    <string name="str_recipe_type">Recipe type</string>
+    <string name="str_calorie_limit">Calorie limit</string>
+    <string name="str_txt_placeholder">-</string>
+
+    <!-- Recipe Details Activity -->
+    <string name="str_ingredients">Ingredients</string>
+    <string name="str_screenshots">Screenshots</string>
+    <string name="str_author">Author:</string>
+    <string name="str_rate_directions">Tap on stars to rate</string>
+    <string name="str_rate_directions_dialog">Tap on stars to rate.</string>
+    <string name="str_rate_title">Rate Recipe</string>
+    <string name="str_rate">Rate</string>
+    <string name="str_list_expand">Show full list</string>
+    <string name="str_reject">reject</string>
+    <string name="str_approve">approve</string>
+    <string name="review_approved_success">Recipe was approved</string>
+    <string name="review_rejected_success">Recipe was rejected</string>
+    <string name="str_reject_title">Rejecting Recipe</string>
+    <string name="str_reject_msg">Are you sure you want to reject recipe? Put rejection reason below.</string>
+    <string name="str_reject_edittxt">Rejection reason</string>
+    <string name="str_reject_btn">Reject</string>
+    <string name="review_approved_empty">Feedback message is empty</string>
+    <string name="str_approve_title">Approving Recipe</string>
+    <string name="str_approve_msg">Are you sure you want to approve this recipe? This recipe will appear for other users after your confirmation.</string>
+    <string name="str_approve_btn">Approve</string>
+    <string name="str_rating_1">Rating</string>
+    <string name="str_rating_2">votes</string>
+
+    <!-- Add Recipe Activity -->
+    <string name="str_step1">Step 1</string>
+    <string name="str_step2">Step 2</string>
+    <string name="str_step3">Step 3</string>
+    <string name="str_step4">Step 4</string>
+    <string name="str_enter_title_edittxt_hint">Recipe title *</string>
+    <string name="str_enter_title">Enter recipe title</string>
+    <string name="str_enter_title_hint">This title will be visible in recipe list.\nOther users will be able to search for title.</string>
+    <string name="str_sign_title">Choose your signature</string>
+    <string name="str_sign_hint">If email is visible then any user can write you an email.</string>
+    <string name="str_screenshots_title">Add recipe pictures</string>
+    <string name="str_screenshots_btn">Click to add</string>
+    <string name="str_add">add</string>
+    <string name="str_sign_btn1">Email and Name</string>
+    <string name="str_sign_btn2">Name</string>
+    <string name="str_sign_btn3">Anonymous</string>
+    <string name="str_swipe_hint">Swipe screen to switch between steps</string>
+    <string name="str_photo_txt">Click to add</string>
+    <string name="str_error_title_empty">Title is empty</string>
+    <string name="str_error_photos_empty">Add at least 1 photo</string>
+    <string name="str_error_photos_size">You can add only 5 photos</string>
+    <string name="str_error_signature_empty">Please, choose your signature</string>
+    <string name="str_error_category_empty">Recipe category is not set</string>
+    <string name="str_error_type_empty">Recipe type is not set</string>
+    <string name="str_error_time_empty">Cooking duration is not set</string>
+    <string name="str_error_description">Cooking guide is empty</string>
+    <string name="str_error_ingredients_empty">No ingredients added</string>
+    <string name="str_error_photos">Error, can\'t add photo</string>
+    <string name="str_error_remove">Error, can\'t remove photo</string>
+    <string name="str_category_title">Choose recipe category</string>
+    <string name="str_category_hint">Choose most relevant category.</string>
+    <string name="str_type_title">Choose recipe type</string>
+    <string name="str_type_hint">Choose most relevant type of your recipe. Mostly it is related to eating time like Dinner or Lunch.</string>
+    <string name="str_time_title">Choose cooking time</string>
+    <string name="str_time_hint">Set number of minutes and hours your dish needs to be completed.</string>
+    <string name="str_dialog_continue_title">Continue last recipe creation?</string>
+    <string name="str_dialog_continue_message">You have unsaved recipe, do you want to continue its creation process? If you start from scratch old recipe will be lost.</string>
+    <string name="str_dialog_continue_btn_new">New</string>
+    <string name="str_dialog_continue_btn_continue">Continue</string>
+    <string name="str_dialog_autocalculation_title">Warning</string>
+    <string name="str_dialog_autocalculation_msg">Do you want to disable total calorie value autocalculation?</string>
+    <string name="str_metrics_us">US</string>
+    <string name="str_metrics_eu">EU</string>
+    <string name="str_add_ingredients_title">Add ingredients</string>
+    <string name="str_metrics_hint">Choose measurment metrics.</string>
+    <string name="str_ingredient_title">Ingredient title</string>
+    <string name="str_calculate_checkbox">calculate total calorie value from ingredients</string>
+    <string name="str_total_kcal_title">Total KCal value</string>
+    <string name="str_guide_title">Add cooking guide</string>
+    <string name="str_guide_hint">Add retails how to cook this recipe.</string>
+    <string name="str_ingredient_hint">Tap here or press ”+” button to add more ingredients.</string>
+    <string name="str_add_ingredient">Add ingredient to current recipe</string>
+    <string name="str_no_ingredients">Use ”+” to add new items.</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_add_photo_error">Can\'t add photo</string>
+    <string name="str_add_photo_count_error">Too many photos</string>
+    <string name="str_add_gallery">Choose From Gallery</string>
+    <string name="str_add_camera">Take Picture</string>
+    <string name="str_group_volume">Volume</string>
+    <string name="str_group_weight">Weight</string>
+    <string name="str_group_length">Length</string>
+
+    <!-- Edit Ingredient Activity -->
+    <string name="str_edit_title">Enter recipe ingredient title</string>
+    <string name="str_edit_title_hint">This is title of your diet item, e.g. Sugar, Salt or Milk.</string>
+    <string name="str_edit_measurment_title">Choose diet item measurment</string>
+    <string name="str_edit_kcal_title">Calorie value per unit*</string>
+    <string name="str_edit_per_init_subtitle">Per unit:</string>
+    <string name="str_edit_per_init_txt">in every</string>
+    <string name="str_edit_quantity">Choose item quantity</string>
+    <string name="str_edit_total_subtitle">Total:</string>
+    <string name="str_edit_total_txt">in</string>
+    <string name="str_edit_total_na">n/a</string>
+    <string name="str_edit_create_btn">create item</string>
+    <string name="str_edit_save_checkbox">Save to calorie menu</string>
+    <string name="str_edittxt_placeholder">0</string>
+    <string name="str_title_edittxt_hint">Recipe ingredient title *</string>
+    <string name="str_info_dialog_title">Info</string>
+    <string name="str_info_dialog_txt">"Calorie per unit" means number if calories consumed for every unit value. E.g. per 100ml, 100g, 1 tps etc.</string>
+    <string name="str_clear_dialog_title">Clear All</string>
+    <string name="str_clear_dialog_txt">Do you want to clear all fields?</string>
+    <string name="str_new_dialog_title">Import New Item&#8230;</string>
+    <string name="str_new_dialog_txt">Do you want to import another ingredient?</string>
+    <string name="str_measurement_dialog_txt">Measurement value is not set.</string>
+    <string name="str_title_dialog_txt">Title is empty.</string>
+    <string name="str_measurement_type_dialog_txt">Measurement type is not set.</string>
+    <string name="str_new_ingredient">&lt;New Ingredient&gt;</string>
+    <string name="str_calorie_dialog_title">Notification</string>
+    <string name="str_calorie_dialog_txt">If "Save" option is not selected then new ingredient will not be saved to your Calorie menu as new, but it will be still added to your recipe.</string>
+	<string name="str_dialog_convertion_title">Value Conversion</string>
+	<string name="str_dialog_convertion_txt">Do you want to convert calorie value for measurement from \'%1$s\' to \'%2$s\'? If you cancel this request you will need to enter calorie value manually.</string>
+    <string name="str_dialog_convertion_current">Keep current</string>
+	<string name="str_dialog_convertion_convert">Convert</string>
+	<string name="str_dialog_convertion_error_txt">Calorie value can\'t be converted from \'%1$s\' to \'%2$s\'. Do you want to keep current value?</string>
+    <string name="str_dialog_convertion_zero">Set to 0</string>
+    <string name="str_dialog_exist_title">Item already exist</string>
+    <string name="str_dialog_exist_txt">This item have been already added to your list. Do you want to edit it?</string>
+    
+    <!-- Choose Ingredient Activity -->
+
+
+    <!-- About Activity -->
+    <string name="str_details">"This app is made for you who want to try 5:2 Diet. It's made as a help for you to keep your results and remind you of your goals. My intention is not provide recipes or calorie tables. That is very simple to find elsewhere. No what I wanted was to make it as simple as possible in my day to day life. It reminds me of my fasting days and I can in a very simple way enter the things I eat and keep track of that. I eat more or less the same and I don't need long calorie tables. So I concentrated on a few things I like to eat and keep it like that, just to keep it simple Or if I cange my mind I enter it myself. I use it everyday and I hope you like the app too.\n\nThis diet has severe calorie restrictions a few days a week and normal eating the other days. This is a form of intermittent fasting. This diet claims to have several beneficial effects on health and weight loss. Like many other diets this is very different from person to person and since this diet includes fasting you should consult a doctor or guide before starting so you are in good health. This diet promotes a low calorie intake of 500 calories for women and 600 for men which can be called fasting on the selected days. The days should not be adjacent but can be chosen in any order. This allows for some eating on the fasting days and normal eating the rest days of the week which we find very easy to live with.\n\nThis diet became popular after the BBC2 television documentary Eat,Fast &amp; Live longer in 2012. Michael J Mosley\'s book The Fast diet was released in February 2013.\n\n\nMore information can be found on Wikipedia\n\nhttp://en.wikipedia.org/wiki/5:2_diet\n\nFeel free to contact us at Stockholm App lab for any improvements, ideas or critics.\nsupport@sweekend.com"</string>
+    <string name="str_visit_us">Visit Us</string>
+    <string name="str_no_activity_visit_us">No Activity found to handle for Visit US</string>
+
+    <!-- Settings Screen Activity -->
+    <string name="str_setting">Settings</string>
+    <string name="str_reminder_on">Reminder is turned on</string>
+    <string name="str_reminder_off">Reminder is turned off</string>
+    <string name="str_morning_reminder">Morning reminder: time when you will be notified about your diet cycle status</string>
+    <string name="str_evening_reminder">Evening reminder: time when you will be notified that next day will be fasting</string>
+    <string name="str_dialog_active">Help dialogues are active</string>
+    <string name="str_dialog_inactive">Help dialogues are inactive</string>
+    <string name="str_dialog_reset">Reset all help\ndialogues</string>
+    <string name="str_reset">Reset</string>
+    <string name="str_reset_hints">Hints have been reset.</string>
+    <string name="str_tap_anywhere">\tTap anywhere to finish editing.</string>
+    <string name="str_logout">Sign Out</string>
+    <string name="str_update">Update Account Info</string>
+    <string name="str_purchase">Purchase Premium Account</string>
+    <string name="str_btn_signout">sign out</string>
+    <string name="str_btn_signin">sign in</string>
+    <string name="str_btn_create">create</string>
+    <string name="str_btn_restore">restore</string>
+    <string name="str_btn_reset">reset</string>
+    <string name="str_never">Never</string>
+
+    <string-array name="array_settings_sections">
+        <item>Reminders</item>
+        <item>User Profile</item>
+        <item>Application</item>
+        <item>Help Dialogs</item>
+    </string-array>
+    <string-array name="array_settings_section_1">
+        <item>Push notifications</item>
+    </string-array>
+    <string-array name="array_settings_section_2">
+        <item>Morning reminder: time when you will be notified about your diet cycle status</item>
+        <item>Evening reminder: time when you will be notified that next day will be fasting</item>
+    </string-array>
+    <string-array name="array_settings_section_3">
+        <item>Facebook</item>
+        <item>No user is signed in</item>
+    </string-array>
+    <string-array name="array_settings_section_4">
+        <item>Last backup info</item>
+        <item>Make new backup</item>
+        <item>Restore from backup</item>
+    </string-array>
+    <string-array name="array_settings_section_5">
+        <item>Current version</item>
+        <item>Application update</item>
+    </string-array>
+    <string-array name="array_settings_section_6">
+        <item>Help dialogues are inactive</item>
+        <item>Reset hints</item>
+    </string-array>
+
+    <!-- Help Guide Activity -->
+
+    <string name="str_diet_journey">Choose the duration of your health diet journey or set it to forever</string>
+    <!-- <string name="str_week">1 week</string> -->
+    <!-- <string name="str_weeks">weeks</string> -->
+
+    <string name="str_instruction">5 weeks is a normal time to do this diet.
+        									This way you have a goal to lookforward to.
+        									However this diet is a healthyway of living so you can also set it to
+        									forever. It\'s all up to you.</string>
+    <string name="str_intensity">Set your desired fasting intensity</string>
+    <string name="str_52">5:2</string>
+    <string name="str_43">4:3</string>
+    <string name="str_61">6:1</string>
+    <string name="str_recommended">Recommended is 5:2.</string>
+    <string name="str_consumption">Set your consumption of calories on your fasting days</string>
+    <string name="str_cal">cals</string>
+    <string name="str_recommended_calorie">Recommended is 500 cals for women and 600 cals for men. Or enter your own amount.</string>
+    <string name="str_preffered_item">Enter your preferred items to consume during your fasting days:</string>
+    <string name="str_calorie_menu">Calorie Menu</string>
+    <string name="str_easy_use">For easy use, enter a few items you normally eat during fasting.\nKeep it simple!\nGood luck!</string>
+    <string name="str_great">Great!</string>
+    <string name="str_ready">You are ready to start your diet.</string>
+    <string name="str_good_luck">Good luck!</string>
+    <string name="str_help_guide_availability">\"Help Guide\" is not available during diet cycle. Do you want to stop it?</string>
+    <string name="str_stop_diet">Stop Diet</string>
+    <string name="str_fasting_days_2">and fasting days</string>
+    <string name="str_change_calorie_menu">However you can still change your calorie menu</string>
+
+    <string-array name="diet_duration">
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>5 weeks</item>
+        <item>8 weeks</item>
+        <item>10 weeks</item>
+        <item>20 weeks</item>
+        <item>forever</item>
+    </string-array>
+
+    <string name="str_start_fasting_now">Do you want to start fasting now?</string>
+    <string name="str_fasting_message">Are you going to start fasting from today or from next fasting day?</string>
+    <string name="str_calories_validation">You need to select amount of calories you can consume during fasting day.</string>
+    <string name="str_fasting_intensity">You need to select fasting days according to selected fasting intensity.</string>
+    <string name="str_next_day">Next day</string>
+    <string name="str_now">Now</string>
+    <string name="str_no">No</string>
+    <string name="str_view">View</string>
+    <!-- Dialog Texts -->
+
+    <string name="str_non_fasting_day_title_1">Welcome to your 5:2 diet</string>
+    <string name="str_non_fasting_day_title_2">Welcome to your 4:3 diet</string>
+    <string name="str_non_fasting_day_title_3">Welcome to your 6:1 diet</string>
+    <string name="str_non_fasting_day_sub_title">Today is eating day! You can eat as normal. Don\'t forget to input your Body stats (Weight for example).</string>
+    <string name="str_fasting_day_sub_title">Fasting day has been begun, track items you want to consume today. Don\'t forget to input your Body stats (Weight for example).</string>
+    <string name="str_menu_dialog">Menu</string>
+    <string name="str_diet_cycle_finish_title">Diet cycle finished</string>
+    <string name="str_diet_cycle_finish_sub_title">You can change some settings and start new diet cycle again</string>
+    <string name="str_diet_cycle_start_title">Your diet cycle has begun</string>
+    <string name="str_diet_cycle_start_sub_title">Do you want to check your body stats?</string>
+    <string name="str_help">Do you want to skip \"Help Guide\"? \"Help Guide\" will setup your diet cycle in step by step way.</string>
+    <string name="str_help_guide">Help Guide</string>
+    <string name="str_skip">Skip</string>
+    <string name="str_dialog_1">You cannot choose 2 days in a row. There has to be an eating day in-between.</string>
+    <string name="str_dialog_2">OK</string>
+    <string name="str_dialog_3">You cannot select more fasting days according your fasting intensity.To select another week day please un-check one.</string>
+    <string name="str_dialog_4">Remove item</string>
+    <string name="str_dialog_4_1">Do you want to remove</string>
+    <string name="str_dialog_4_2">from your diet list?</string>
+    <string name="str_dialog_5">Cancel</string>
+    <string name="str_dialog_6">Do you want to remove item from your diet list?</string>
+    <string name="str_dialog_7">You cannot select less fasting days than the set fasting intensity</string>
+    <string name="str_dialog_8">Adding Calories</string>
+    <string name="str_dialog_9">You can add calories here or pick up from your calorie menu.</string>
+    <string name="str_dialog_10">Title is empty.</string>
+    <string name="str_dialog_11">Kcal value is empty.</string>
+    <string name="str_dialog_12">Add</string>
+    <string name="str_dialog_13">Feedback title is empty.</string>
+    <string name="str_dialog_14">User email is not valid.</string>
+    <string name="str_dialog_15">Feedback message is empty.</string>
+    <string name="str_dialog_16">Your request was submitted successfully.</string>
+    <string name="str_dialog_17">Removing Consumed Item</string>
+    <string name="str_dialog_18">Consume</string>
+    <!-- <string name="str_dialog_18">Are you sure you want to remove Egg from cunsumed items?</string> -->
+
+    <string name="str_dialog_19">Welcome to Health Diet app!</string>
+    <string name="str_dialog_20">Is this your first time of using the app?</string>
+    <string name="str_dialog_21">Yes</string>
+    <string name="str_dialog_23">You have</string>
+    <string name="str_dialog_24">HELLO,</string>
+    <string name="str_dialog_25">This is your diet diary. You can track calories that you consumed during the day.You can go to settings in case you want to setup reminders.</string>
+    <string name="str_dialog_26">calories left.Do you want to eat something?</string>
+    <string name="str_dialog_27">Recover</string>
+    <string name="str_dialog_28">Password Recovering</string>
+    <string name="str_dialog_29">Enter your email to proceed password recovering process. New password will be sent to provided email.</string>
+    <string name="str_stop_diet_cycle">Stopping diet cycle</string>
+    <string name="str_stop_diet_cycle_message">Are you sure you want to stop current diet cycle?</string>
+    <string name="str_title">title</string>
+    <string name="str_kcal">kcal</string>
+
+    <!-- Calorie Menu Activity -->
+    <string name="str_remind_1_hour">Remind in 1 hour</string>
+    <string name="str_item">item</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_done">done</string>
+    <string name="str_remove">remove</string>
+    <string name="str_open_todays_list">Open Today\'s List</string>
+    <string name="str_calorie_add_item">Add Item</string>
+    <string name="str_calorie_add_items">Add Items</string>
+    <string name="str_update_item">update item</string>
+    <string name="str_dialog_title">Consuming Items</string>
+    <string name="str_dialog_consume_1">Consuming</string>
+    <string name="str_dialog_consume_2">Items</string>
+
+    <!-- Stop Diet setting -->
+    <string name="str_6_1">You need to select 1 day(s) according to 6:1 fasting intensity</string>
+    <string name="str_5_2">You need to select 2 day(s) according to 5:2 fasting intensity</string>
+    <string name="str_4_3">You need to select 3 day(s) according to 4:3 fasting intensity</string>
+
+    <!-- Quick Start Activity -->
+
+    <string name="str_quick_start">Quick Start</string>
+    <string name="str_duration">Duration</string>
+    <string name="str_intensity_1">Intensity</string>
+    <string name="str_caloriesperday">Calories/\nday</string>
+    <string name="str_menu">Menu</string>
+
+    <!-- My Stats Activity -->
+
+    <string name="str_time_left">Time left</string>
+    <string name="str_fasting_days_1">Fasting days</string>
+    <string name="str_fasting_days_missed">Fasting days missed</string>
+    <string name="str_points_1">Points</string>
+    <string name="str_achievement_points">Achievement points</string>
+    <string name="str_current_body_stats">Current\nBody\nStats</string>
+    <string name="str_diet_cycle_history_1">Diet\nCycle\nHistory</string>
+    <string name="str_achievements">Achieve\nments</string>
+    <string name="str_achievements_title">Achievements</string>
+    <string name="str_share">Share</string>
+
+    <!-- diet cycle history -->
+
+    <string name="str_diet_cycle_history_2">Diet Cycle History</string>
+    <string name="str_no_history_found">No history found.\n\n Start new diet cycle to track your\nBody Stats and other values.</string>
+
+    <!-- Consumed Today Activity -->
+
+    <string name="str_consumed_today">Consumed Today</string>
+    <string name="str_diet_time">diet time</string>
+    <string name="str_free_value">free\nvalue</string>
+    <string name="str_from_menu">from\nmenu</string>
+    <string name="str_info">It is not necessary to track consumed items during usual days but you can still do this for personal reasons.</string>
+    <string name="str_select">Select</string>
+    <string name="str_no_more_calories_left">No More Calories Left</string>
+    <string name="str_miss_goal">If you add these calories you will miss your goal for today. Do you still want to add it?</string>
+    <string name="str_use">Use\t</string>
+    <string name="str_add_item">\tto add items from your calorie menu you want to consume.</string>
+    <string name="str_remove_1">Are you sure you want to remove</string>
+    <string name="str_remove_2">from cunsumed items?</string>
+    <!-- Contact US Activity -->
+
+    <string name="str_contact_us">Contact Us</string>
+    <string name="str_title_1">Title *</string>
+    <string name="str_email_1">Email *</string>
+    <string name="str_request_message">You can describe your request or feedback here.</string>
+    <string name="str_request_message_1">Send Your Request</string>
+    <string name="str_sending_message">Sending&#8230;</string>
+    <string name="str_contact_send_error">Error, can\'t post feedback</string>
+
+    <!-- Achievements Activity -->
+
+    <string name="str_achievements_1">Achievements</string>
+    <string name="str_join">Join our party!</string>
+    <string name="str_visited">You have visited Stockholm App Lab&#8230;</string>
+    <string name="str_visited_1">You have visited Stockholm App Lab web site.</string>
+    <string name="str_points">Points:</string>
+    <string name="str_complete">Complete:</string>
+    <string name="str_fasting_day">Fasting Day</string>
+    <string name="str_you_have_done">You have done a fasting day.</string>
+    <string name="str_One">One, two&#8230; seven?</string>
+    <string name="str_use_app">Use app for 7 days in a row</string>
+    <string name="str_become">I become slimmer</string>
+    <string name="str_comoplete_diet_cycle">Complete 1 diet cycle.</string>
+    <string name="str_achievement_2">You have visited Stockholm App Lab web site.</string>
+    <string name="str_achievement_3">You have done a fasting day.</string>
+    <string name="str_achievement_4">You have completed 1 diet cycle.</string>
+    <string name="str_achievement_5">More</string>
+    <string name="str_achievement_6">Use app for 7 days in a row.</string>
+
+    <!-- Body Stats Activity -->
+
+    <string name="str_graph">Graph</string>
+    <string name="str_kcal_1">KCAL</string>
+    <string name="str_kcal_2">(Kcal)</string>
+    <string name="str_wei">WEI</string>
+    <string name="str_weight">(Weight)</string>
+    <string name="str_wai">WAI</string>
+    <string name="str_waist">(Waist)</string>
+    <string name="str_cho">CHO</string>
+    <string name="str_cholesterol">(Cholesterol)</string>
+    <string name="str_tri">TRI</string>
+    <string name="str_triglycerids">(Triglycerids)</string>
+    <string name="str_glu">GLU</string>
+    <string name="str_glucose">(Glucose)</string>
+    <string name="str_igf">IGF</string>
+    <string name="str_igf_1">(IGF-1)</string>
+    <string name="str_set_goal_text ">You can set "Goal" value for current Body Statistics parameter.</string>
+    <string name="str_goal">Set Goal</string>
+    <string name="press">Press here to set current value.</string>
+
+    <!-- Preferences.... -->
+
+    <string name="KEY_IS_DIALOG_ACTIVE">is_dialog_active</string>
+    <string name="KEY_IS_REMINDER_ON">is_reminder_on</string>
+    <string name="KEY_MORNING_REMINDER">morning_reminder</string>
+    <string name="KEY_EVENING_REMINDER">evening_reminder</string>
+    <string name="KEY_IS_START_ACTIVE_START">is_start_active_start_button</string>
+    <string name="KEY_IS_START_ACTIVE_MYSTATS">is_start_active_mystats_button</string>
+    <string name="KEY_IS_START_ACTIVE_DIET_CYCLE">is_start_active_diet_cycle_button</string>
+    <string name="KEY_IS_QUICK_START_ACTIVE_PROGRESS">is_quick_start_active_progress</string>
+    <string name="KEY_IS_QUICK_START_ACTIVE_RADIO">is_quick_start_active_radio</string>
+    <string name="KEY_IS_QUICK_START_ACTIVE_CALORY">is_quick_start_active_calory</string>
+    <string name="KEY_IS_QUICK_START_ACTIVE_CALORY_MENU">is_quick_start_active_calory_menu</string>
+    <string name="KEY_IS_QUICK_START_ACTIVE_START">is_quick_start_active_start</string>
+    <string name="KEY_IS_FRAGMENT_1">is_fragment_1</string>
+    <string name="KEY_IS_FRAGMENT_2">is_fragment_2</string>
+    <string name="KEY_IS_FRAGMENT_3">is_fragment_3</string>
+    <string name="KEY_IS_FRAGMENT_4">is_fragment_4</string>
+    <string name="KEY_IS_FRAGMENT_5">is_fragment_5</string>
+    <string name="KEY_IS_MY_STATS_CURRENT_BODY_STAT">is_my_stats_current_body</string>
+    <string name="KEY_IS_MY_STATS_DIET_CYCLE_HISTORY">is_my_stats_diet_cycle_history</string>
+    <string name="KEY_IS_DIET_CYCLE_HISTORY_1">is_diet_cycle_history_1</string>
+    <string name="KEY_IS_DIET_CYCLE_HISTORY_2">is_diet_cycle_history_2</string>
+    <string name="KEY_IS_CONSUMED_TODAY_1">is_consumed_today_1</string>
+    <string name="KEY_IS_CONSUMED_TODAY_2">is_consumed_today_2</string>
+    <string name="KEY_IS_CONSUMED_TODAY_3">is_consumed_today_3</string>
+    <string name="KEY_IS_CONSUMED_TODAY_4">is_consumed_today_4</string>
+    <string name="KEY_IS_CONSUMED_TODAY_5">is_consumed_today_5</string>
+    <string name="KEY_IS_ABOUT_ACTIVE">is_about_active</string>
+    <string name="KEY_IS_STOP_DIET">is_stop_diet</string>
+    <string name="KEY_IS_BODY_STAT_GRAPH">is_body_stat_graph</string>
+    <string name="KEY_IS_BODY_STAT_STATS">is_body_stat_stats</string>
+    <string name="KEY_IS_BODY_STAT_SET_GOAL">is_body_stat_set_goal</string>
+    <string name="KEY_IS_APP_LAUNCH_FIRST_TIME">is_app_launch_first_time</string>
+    <string name="KEY_DIET_CYCLE_COMPLETED">diet_cycle_completed</string>
+    <string name="KEY_CHECK_ABOUT_US_OPTIONS">check_about_us_options</string>
+    <string name="KEY_7_DAY_COMPLETED">day_7_completed</string>
+    <string name="KEY_SHOW_DIALOG_DIET_CYCLE_COMPLETED">show_dialog_diet_cycle_completed</string>
+    <string name="KEY_SHOW_DIALOG_ABOUT_US_OPTIONS">show_dialog_about_us_options</string>
+    <string name="KEY_SHOW_DIALOG_FASTING_DAY_COMPLETED">show_dialog_fasting_day_completed</string>
+    <string name="KEY_SHOW_7_DAY_COMPLETED">show_7_day_completed</string>
+    <string name="KEY_BADGE_SHOW_FLAG">badge_show_flag</string>
+    <!-- Quick Action Settings Dialogs -->
+
+    <string name="str_start_message_1">Use \"Start\" button to begin your diet.</string>
+    <string name="str_start_message_2">Visit Us - brings you to Facebook page.\nContact Us - you can send email with your question or feedback.</string>
+    <string name="str_start_message_3">Don\'t forget to enter your body Stats for today.</string>
+    <string name="str_start_message_4">Drag the slider to choose number of weeks for your diet cycle.</string>
+    <string name="str_start_message_5">Choose fasting intensity you want to follow. Also define fasting week days.</string>
+    <string name="str_start_message_6">Pick number of calories you can consume during fasting days.</string>
+    <string name="str_start_message_7">Add items to your calorie list.</string>
+    <string name="str_start_message_8">Now all settings are done.So you can start your diet.</string>
+    <string name="str_start_message_9">You can\'t put two diet days in a row there has to be an eating day in-between. You can change your fasting days when you have started your diet.</string>
+    <string name="str_start_message_10">Start your diet cycle and enter your Body Stats values.</string>
+    <string name="str_start_message_11">You can check your diet cycle history, enter body stats and check graphs.</string>
+    <string name="str_start_message_12">Click header to open/close Diet Cycle History details.</string>
+    <string name="str_start_message_13">Check your Body Stats graph.</string>
+    <string name="str_start_message_14">This is the total time left for your diet cycle.</string>
+    <string name="str_start_message_15">This is the list of items you consumed during current day. You can add more items or remove already added.</string>
+    <string name="str_start_message_16">You can change fasting days at any moment.</string>
+    <string name="str_start_message_17">You can track consumed items and check your diet status by clicking button below.</string>
+    <string name="str_start_message_18">If you want to change some settings or start another diet you need to stop current diet cycle.</string>
+    <string name="str_start_message_19">\"Remind Me Later\" will remind you about left calories in 1 hours.</string>
+    <string name="str_start_message_20">Click on graph if you want to change enter or change some Body Statistics parameters.</string>
+    <string name="str_start_message_21">Check another body state value.</string>
+    <string name="str_start_message_22">You can set \"Goal\" value for current Body Statistics parameters.</string>
+    <string name="str_hide_hints">Hide hints</string>
+
+    <!-- App Rater -->
+    <string name="KEY_APP_LAUNCH_COUNT">key_app_launch_count</string>
+    <string name="KEY_DIALOG_LAUNCH_COUNT">key_dialog_launch_count</string>
+    <string name="KEY_NUMBER_OF_TIME_APP_LAUNCH">key_number_of_time_app_launch</string>
+    <string name="KEY_NUMBER_OF_TIME_DIALOG_LAUNCH">key_number_of_time_dialog_launch</string>
+    <string name="KEY_JOIN_SUCCESSFULLY">key_join_successfully</string>
+    <string name="KEY_ENTER_CONSUME_ITEM_COUNT">key_enter_consume_item_count</string>
+    <string name="KEY_NO_THANKS_FLAG">key_no_thanks_flag</string>
+    <string name="str_rate_dialog_title">Rate 5:2 Health Diet</string>
+    <string name="str_no_thanks">No, Thanks</string>
+
+    <!-- Join Dialog -->
+    <string name="str_email_hint">Email</string>
+    <string name="str_joien_title">FREE 5:2 Health Diet Membership</string>
+    <string name="str_joien_message">Get your free weekly 5:2 recipes and health tips.\nAdd your email address:</string>
+    <string name="str_join_1">Join</string>
+
+    <!-- Media -->
+    <string name="str_twitter">Twitter</string>
+    <string name="str_media_facebook">Facebook</string>
+    <string name="str_web">Web Site</string>
+    <string name="str_google">Google+</string>
+    <string name="str_more">More apps</string>
+    <string name="str_contact">Contact Us</string>
+    <string name="str_about">About</string>
+
+    <string-array name="food_item_name">
+        <item>Orange</item>
+        <item>Banana</item>
+        <item>Blueberry</item>
+        <item>Lemon</item>
+        <item>Grapefruit</item>
+        <item>Rasberry</item>
+        <item>Frozen Rasb</item>
+        <item>Strawberrys</item>
+        <item>Frozen Strawb</item>
+        <item>Apple</item>
+        <item>Couliflower</item>
+        <item>Broccoli</item>
+        <item>mushrooms</item>
+        <item>Cucumber</item>
+        <item>Lettuce</item>
+        <item>Chanterelles</item>
+        <item>Carrot</item>
+        <item>Paprika red</item>
+        <item>Paprika green</item>
+        <item>Paprika yellow</item>
+        <item>Radish</item>
+        <item>Tomato</item>
+        <item>Cabbage</item>
+        <item>Aspargus</item>
+        <item>Spinach</item>
+        <item>Frozen Spinach</item>
+        <item>Potatoe Boiled</item>
+        <item>Wild rice</item>
+        <item>Brown rice</item>
+        <item>Instant rice</item>
+        <item>Pasta white</item>
+        <item>Pasta wholemeal</item>
+        <item>Egg raw/boiled</item>
+        <item>Egg fried</item>
+        <item>Coffee</item>
+        <item>Coffee w milk</item>
+        <item>Tea</item>
+        <item>Tea w milk</item>
+        <item>cranberry juice</item>
+        <item>Milk low fat</item>
+        <item>Mid fat milk</item>
+        <item>rosehip tea</item>
+        <item>Soy beverage</item>
+        <item>Oatmeal drink</item>
+        <item>Chicken fillet</item>
+        <item>Chicken club</item>
+        <item>Chicken wing</item>
+        <item>Chicken breast</item>
+        <item>Chicken grilled</item>
+        <item>Turkey</item>
+        <item>Pork Grilled</item>
+        <item>Minced beef</item>
+        <item>Pork fillet</item>
+        <item>Pork chop</item>
+        <item>Tuna Fresh</item>
+        <item>Tuna in oil</item>
+        <item>Tuna in water</item>
+        <item>Shrimps</item>
+        <item>Perch</item>
+        <item>walley</item>
+        <item>Lobster</item>
+        <item>Halibut</item>
+        <item>Haddok</item>
+        <item>Hake</item>
+        <item>Gravlax</item>
+        <item>Oysters</item>
+        <item>Mussels</item>
+        <item>Plaice</item>
+        <item>Cod</item>
+    </string-array>
+
+    <integer-array name="food_cal">
+        <item>54</item>
+        <item>104</item>
+        <item>53</item>
+        <item>29</item>
+        <item>38</item>
+        <item>42</item>
+        <item>47</item>
+        <item>47</item>
+        <item>37</item>
+        <item>59</item>
+        <item>25</item>
+        <item>27</item>
+        <item>31</item>
+        <item>11</item>
+        <item>14</item>
+        <item>23</item>
+        <item>31</item>
+        <item>36</item>
+        <item>26</item>
+        <item>23</item>
+        <item>18</item>
+        <item>26</item>
+        <item>23</item>
+        <item>29</item>
+        <item>15</item>
+        <item>25</item>
+        <item>78</item>
+        <item>74</item>
+        <item>85</item>
+        <item>69</item>
+        <item>212</item>
+        <item>196</item>
+        <item>85</item>
+        <item>90</item>
+        <item>2</item>
+        <item>5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>28</item>
+        <item>39</item>
+        <item>47</item>
+        <item>1</item>
+        <item>56</item>
+        <item>44</item>
+        <item>115</item>
+        <item>114</item>
+        <item>186</item>
+        <item>105</item>
+        <item>239</item>
+        <item>115</item>
+        <item>228</item>
+        <item>149</item>
+        <item>100</item>
+        <item>191</item>
+        <item>138</item>
+        <item>189</item>
+        <item>106</item>
+        <item>84</item>
+        <item>85</item>
+        <item>97</item>
+        <item>87</item>
+        <item>118</item>
+        <item>80</item>
+        <item>70</item>
+        <item>179</item>
+        <item>76</item>
+        <item>91</item>
+        <item>93</item>
+        <item>75</item>
+    </integer-array>
+
+    <string name="str_remind_me_later">Remind me later</string>
+
+    <!-- Summary -->
+    <string name="str_summary_editing">begin editing</string>
+    <string name="str_summary_finish_editing">finish editing</string>
+    <string name="str_summary_submit">submit to review</string>
+    <string name="str_summary_terms_title">Terms And Conditions</string>
+    <string name="str_summary_terms_txt">I am aware that by publishing a recipe I am responsible for it as a whole. The only thing you are allowed to enter is sincere recipes of eatable and drinkable food and beverages. Violating this rule will ban you from the app. Picture, measurements and text is my responsibility and should be complete and done to the best of your knowledge. I am aware that I am not allowed to make offensive material and if I do I will be banned from the app. All entries are viewed before publishing and can be rejected without any explanation. That I can only use my own pictures and that I am responsible for any entered material. The material used may be used by the publisher of this app in any way they please and I cannot claim any reimbursement in any form for it. Any Apple rules complies as well.</string>
+    <string name="str_summary_edit">edit</string>
+
+</resources>

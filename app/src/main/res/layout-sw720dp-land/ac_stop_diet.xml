@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slk="http://schemas.slktechlabs.com/slk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_background"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:paddingTop="48dp" >
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_stop_diet_cycle"
+            style="@style/style4.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/str_help_guide_availability"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <LinearLayout
+            android:id="@+id/ll_stop_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:padding="5dp" >
+
+            <com.stockholmapplab.recipes.typeface.CustomButton
+                android:id="@+id/bt_btn_stop_diet"
+                style="@style/style6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_reset"
+                android:onClick="onViewClick"
+                android:textColor="@drawable/ac_about_text_selector"
+                slk:typeface="font/ClementePDao-Heavy.otf" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_change_calorie_menu"
+            style="@style/style4.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/str_change_calorie_menu"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btn_calorie_menu"
+            style="@style/style6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_blue_patch_right"
+            android:onClick="onViewClick"
+            android:textColor="@drawable/ac_about_text_selector"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_fasting_days"
+            style="@style/style13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/str_fasting_days_2"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomTextView
+            android:id="@+id/tv_txt_fasting"
+            style="@style/style14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/stop_margin_top"
+            android:gravity="center"
+            slk:typeface="font/ClementePDao-Heavy.otf" />
+
+        <com.stockholmapplab.recipes.typeface.CustomButton
+            android:id="@+id/bt_btn_select_calendar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ac_arrow_selector"
+            android:onClick="onViewClick" />
+    </LinearLayout>
+
+</ScrollView>
